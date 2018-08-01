@@ -161,12 +161,6 @@
   </url>
   
   <url>
-    <loc>https://polodev.github.io/tutorials/categories/international-affairs/</loc>
-    <lastmod>2018-07-28T15:34:53+06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://polodev.github.io/tutorials/tags/international-affairs/</loc>
     <lastmod>2018-07-28T15:34:53+06:00</lastmod>
     <priority>0</priority>
@@ -179,14 +173,14 @@
   </url>
   
   <url>
-    <loc>https://polodev.github.io/tutorials/international-affairs/</loc>
+    <loc>https://polodev.github.io/tutorials/categories/international-affairs/</loc>
     <lastmod>2018-07-28T15:34:53+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://polodev.github.io/tutorials/categories/javascript/</loc>
-    <lastmod>2018-07-28T15:26:09+06:00</lastmod>
+    <loc>https://polodev.github.io/tutorials/international-affairs/</loc>
+    <lastmod>2018-07-28T15:34:53+06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -203,7 +197,7 @@
   </url>
   
   <url>
-    <loc>https://polodev.github.io/tutorials/categories/jquery/</loc>
+    <loc>https://polodev.github.io/tutorials/categories/javascript/</loc>
     <lastmod>2018-07-28T15:26:09+06:00</lastmod>
     <priority>0</priority>
   </url>
@@ -221,14 +215,14 @@
   </url>
   
   <url>
-    <loc>https://polodev.github.io/tutorials/math/</loc>
-    <lastmod>2018-07-29T16:57:49+06:00</lastmod>
+    <loc>https://polodev.github.io/tutorials/categories/jquery/</loc>
+    <lastmod>2018-07-28T15:26:09+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://polodev.github.io/tutorials/categories/php/</loc>
-    <lastmod>2018-07-28T15:26:09+06:00</lastmod>
+    <loc>https://polodev.github.io/tutorials/math/</loc>
+    <lastmod>2018-07-29T16:57:49+06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -240,6 +234,12 @@
   
   <url>
     <loc>https://polodev.github.io/tutorials/dtags/php/</loc>
+    <lastmod>2018-07-28T15:26:09+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://polodev.github.io/tutorials/categories/php/</loc>
     <lastmod>2018-07-28T15:26:09+06:00</lastmod>
     <priority>0</priority>
   </url>
