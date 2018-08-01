@@ -165,12 +165,6 @@
   </url>
   
   <url>
-    <loc>https://polodev.github.io/tutorials/tutorialtypes/international-affairs/</loc>
-    <lastmod>2018-07-28T15:34:43+06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://polodev.github.io/tutorials/categories/international-affairs/</loc>
     <lastmod>2018-07-28T15:34:53+06:00</lastmod>
     <priority>0</priority>
@@ -179,6 +173,12 @@
   <url>
     <loc>https://polodev.github.io/tutorials/tags/international-affairs/</loc>
     <lastmod>2018-07-28T15:34:53+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://polodev.github.io/tutorials/tutorialtypes/international-affairs/</loc>
+    <lastmod>2018-07-28T15:34:43+06:00</lastmod>
     <priority>0</priority>
   </url>
   
