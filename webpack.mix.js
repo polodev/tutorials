@@ -11,7 +11,8 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.sass('assets/css/style.scss', 'static/css').react('assets/es6/ecma.js', 'static/js/')
+mix.sass('assets/css/style.scss', 'static/css').react('assets/es6/ecma.js', 'static/js/');
+// mix.sass('assets/css/standalone_editor_page.scss', 'static/css/');
 
 // Full API
 // mix.js(src, output);

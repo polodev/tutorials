@@ -66,6 +66,10 @@
   </url>
   
   <url>
+    <loc>https://polodev.github.io/tutorials/editor/</loc>
+  </url>
+  
+  <url>
     <loc>https://polodev.github.io/tutorials/authors/</loc>
     <priority>0</priority>
   </url>
@@ -95,13 +99,13 @@
   </url>
   
   <url>
-    <loc>https://polodev.github.io/tutorials/tags/codeigniter/</loc>
+    <loc>https://polodev.github.io/tutorials/dtags/codeigniter/</loc>
     <lastmod>2018-07-28T15:26:09+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://polodev.github.io/tutorials/dtags/codeigniter/</loc>
+    <loc>https://polodev.github.io/tutorials/tags/codeigniter/</loc>
     <lastmod>2018-07-28T15:26:09+06:00</lastmod>
     <priority>0</priority>
   </url>
@@ -161,12 +165,6 @@
   </url>
   
   <url>
-    <loc>https://polodev.github.io/tutorials/tags/international-affairs/</loc>
-    <lastmod>2018-07-28T15:34:53+06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://polodev.github.io/tutorials/tutorialtypes/international-affairs/</loc>
     <lastmod>2018-07-28T15:34:43+06:00</lastmod>
     <priority>0</priority>
@@ -179,14 +177,14 @@
   </url>
   
   <url>
-    <loc>https://polodev.github.io/tutorials/international-affairs/</loc>
+    <loc>https://polodev.github.io/tutorials/tags/international-affairs/</loc>
     <lastmod>2018-07-28T15:34:53+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://polodev.github.io/tutorials/tags/javascript/</loc>
-    <lastmod>2018-07-28T15:26:09+06:00</lastmod>
+    <loc>https://polodev.github.io/tutorials/international-affairs/</loc>
+    <lastmod>2018-07-28T15:34:53+06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -203,7 +201,7 @@
   </url>
   
   <url>
-    <loc>https://polodev.github.io/tutorials/tags/jquery/</loc>
+    <loc>https://polodev.github.io/tutorials/tags/javascript/</loc>
     <lastmod>2018-07-28T15:26:09+06:00</lastmod>
     <priority>0</priority>
   </url>
@@ -221,14 +219,14 @@
   </url>
   
   <url>
-    <loc>https://polodev.github.io/tutorials/math/</loc>
-    <lastmod>2018-07-29T16:57:49+06:00</lastmod>
+    <loc>https://polodev.github.io/tutorials/tags/jquery/</loc>
+    <lastmod>2018-07-28T15:26:09+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://polodev.github.io/tutorials/tags/php/</loc>
-    <lastmod>2018-07-28T15:26:09+06:00</lastmod>
+    <loc>https://polodev.github.io/tutorials/math/</loc>
+    <lastmod>2018-07-29T16:57:49+06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -240,6 +238,12 @@
   
   <url>
     <loc>https://polodev.github.io/tutorials/categories/php/</loc>
+    <lastmod>2018-07-28T15:26:09+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://polodev.github.io/tutorials/tags/php/</loc>
     <lastmod>2018-07-28T15:26:09+06:00</lastmod>
     <priority>0</priority>
   </url>

@@ -28,6 +28,7 @@ var js_files = [
 "./static/codemirror/mode/php/php.js" ,
 "./static/codemirror/mode/jsx/jsx.js" ,
 "./static/codemirror/mode/sql/sql.js" ,
+"./static/codemirror/mode/markdown/markdown.js" ,
 "./static/codemirror/keymap/vim.js" ,
 "./static/codemirror/addon/hint/anyword-hint.js" ,
 "./static/codemirror/addon/hint/show-hint.js" ,
