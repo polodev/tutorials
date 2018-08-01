@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Polo Dev on Site</title>
+    <link>https://polodev.github.io/tutorials/authors/polo-dev/</link>
+    <description>Recent content in Polo Dev on Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Jul 2018 16:57:49 +0600</lastBuildDate>
+    
+	<atom:link href="https://polodev.github.io/tutorials/authors/polo-dev/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Math Test</title>
+      <link>https://polodev.github.io/tutorials/math/math-test/</link>
+      <pubDate>Sun, 29 Jul 2018 16:57:49 +0600</pubDate>
+      
+      <guid>https://polodev.github.io/tutorials/math/math-test/</guid>
+      <description>math test for latex  When \(a \ne 0\), there are two solutions to \( ax^2 + bx + c = 0\) and they are  \( x = {-b \pm \sqrt{b^2-4ac} \over 2a}\)  hello  hello  When \(a \ne 0\), there are two solutions to \( ax^2 + bx + c = 0 \) and they are  $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$   hello  When \(a \ne 0\), there are two solutions to \( ax^2 + bx + c = 0 \) and they are  $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.</description>
+    </item>
+    
+    <item>
+      <title>Daily Journal Example</title>
+      <link>https://polodev.github.io/tutorials/daily-journal/daily-journal-example/</link>
+      <pubDate>Sun, 29 Jul 2018 13:50:43 +0600</pubDate>
+      
+      <guid>https://polodev.github.io/tutorials/daily-journal/daily-journal-example/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Daily Science Example</title>
+      <link>https://polodev.github.io/tutorials/daily-science/daily-science-example/</link>
+      <pubDate>Sun, 29 Jul 2018 13:50:23 +0600</pubDate>
+      
+      <guid>https://polodev.github.io/tutorials/daily-science/daily-science-example/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tutorial 101</title>
+      <link>https://polodev.github.io/tutorials/tutorials/tutorial-101/</link>
+      <pubDate>Sat, 28 Jul 2018 15:58:48 +0600</pubDate>
+      
+      <guid>https://polodev.github.io/tutorials/tutorials/tutorial-101/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bangla 101</title>
+      <link>https://polodev.github.io/tutorials/bangla/bangla-101/</link>
+      <pubDate>Sat, 28 Jul 2018 15:50:05 +0600</pubDate>
+      
+      <guid>https://polodev.github.io/tutorials/bangla/bangla-101/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>English 101</title>
+      <link>https://polodev.github.io/tutorials/english/english-101/</link>
+      <pubDate>Sat, 28 Jul 2018 15:49:37 +0600</pubDate>
+      
+      <guid>https://polodev.github.io/tutorials/english/english-101/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bangladesh Affairs 101</title>
+      <link>https://polodev.github.io/tutorials/bangladesh-affairs/bangladesh-affairs-101/</link>
+      <pubDate>Sat, 28 Jul 2018 15:48:31 +0600</pubDate>
+      
+      <guid>https://polodev.github.io/tutorials/bangladesh-affairs/bangladesh-affairs-101/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Diplomatic Term</title>
+      <link>https://polodev.github.io/tutorials/international-affairs/diplomatic-term/</link>
+      <pubDate>Sat, 28 Jul 2018 15:34:53 +0600</pubDate>
+      
+      <guid>https://polodev.github.io/tutorials/international-affairs/diplomatic-term/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>United Nations</title>
+      <link>https://polodev.github.io/tutorials/international-affairs/united-nations/</link>
+      <pubDate>Sat, 28 Jul 2018 15:34:43 +0600</pubDate>
+      
+      <guid>https://polodev.github.io/tutorials/international-affairs/united-nations/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CodeIgniter</title>
+      <link>https://polodev.github.io/tutorials/decks/codeigniter/</link>
+      <pubDate>Sat, 28 Jul 2018 15:26:09 +0600</pubDate>
+      
+      <guid>https://polodev.github.io/tutorials/decks/codeigniter/</guid>
+      <description>1 - setting up base url // file: application/config.php $config[&#39;base_url&#39;] = &#39;http://localhost:8000&#39;;  2 - to load a view // file: controllers &amp;gt; Properties.php class Properties extends CI_Controller { public function index() { $this-&amp;gt;load-&amp;gt;view(&#39;layouts/header&#39;); $this-&amp;gt;load-&amp;gt;view(&#39;layouts/navbar&#39;); $this-&amp;gt;load-&amp;gt;view(&#39;properties/index&#39;) $this-&amp;gt;load-&amp;gt;view(&#39;layouts/footer&#39;); } }  3 - automatic url in codeigniter index.php/{cotroller}/{method}/[param1]/[param2]  4 - passing value in to the view $data[&#39;user_name&#39;] = &#39;Bernard&#39;; $data[&#39;status_group&#39;] = [&#39;all&#39;, &#39;available&#39;, &#39;unavailable&#39;]; $this-&amp;gt;load-&amp;gt;view(&#39;properties/index&#39;, $data)  5 - controller with params how codeIgniter making route automatically</description>
+    </item>
+    
+    <item>
+      <title>W3schools Jquery</title>
+      <link>https://polodev.github.io/tutorials/decks/w3schools-jquery/</link>
+      <pubDate>Sat, 28 Jul 2018 15:26:09 +0600</pubDate>
+      
+      <guid>https://polodev.github.io/tutorials/decks/w3schools-jquery/</guid>
+      <description>1 - Basic syntax $(selector).action()  2 - The Document Ready Event $(document).ready(function(){ // jQuery methods go here... }); // shorter $(function(){ // jQuery methods go here... });  3 - Selects the first &amp;lt;li&amp;gt; element of the first &amp;lt;ul&amp;gt; $(&amp;quot;ul li:first&amp;quot;)  4 - Selects the first &amp;lt;li&amp;gt; element of every &amp;lt;ul&amp;gt; $(&amp;quot;ul li:first-child&amp;quot;)  5 - Selects all &amp;lt;a&amp;gt; elements with a target attribute value equal to &amp;quot;_blank&amp;quot; $(&amp;quot;a[target=&#39;_blank&#39;]&amp;quot;)  6 - Selects all &amp;lt;a&amp;gt; elements with a target attribute value NOT equal to &amp;quot;_blank&amp;quot; $(&amp;quot;a[target!</description>
+    </item>
+    
+  </channel>
+</rss>

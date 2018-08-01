@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Php on Site</title>
+    <link>https://polodev.github.io/tutorials/tags/php/</link>
+    <description>Recent content in Php on Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Jul 2018 15:26:09 +0600</lastBuildDate>
+    
+	<atom:link href="https://polodev.github.io/tutorials/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CodeIgniter</title>
+      <link>https://polodev.github.io/tutorials/decks/codeigniter/</link>
+      <pubDate>Sat, 28 Jul 2018 15:26:09 +0600</pubDate>
+      
+      <guid>https://polodev.github.io/tutorials/decks/codeigniter/</guid>
+      <description>1 - setting up base url // file: application/config.php $config[&#39;base_url&#39;] = &#39;http://localhost:8000&#39;;  2 - to load a view // file: controllers &amp;gt; Properties.php class Properties extends CI_Controller { public function index() { $this-&amp;gt;load-&amp;gt;view(&#39;layouts/header&#39;); $this-&amp;gt;load-&amp;gt;view(&#39;layouts/navbar&#39;); $this-&amp;gt;load-&amp;gt;view(&#39;properties/index&#39;) $this-&amp;gt;load-&amp;gt;view(&#39;layouts/footer&#39;); } }  3 - automatic url in codeigniter index.php/{cotroller}/{method}/[param1]/[param2]  4 - passing value in to the view $data[&#39;user_name&#39;] = &#39;Bernard&#39;; $data[&#39;status_group&#39;] = [&#39;all&#39;, &#39;available&#39;, &#39;unavailable&#39;]; $this-&amp;gt;load-&amp;gt;view(&#39;properties/index&#39;, $data)  5 - controller with params how codeIgniter making route automatically</description>
+    </item>
+    
+  </channel>
+</rss>

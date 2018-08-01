@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning site</title>
+  <link rel="canonical" href="https://polodev.github.io/tutorials/decks/w3schools-jquery/">
+  <link rel='icon' href='https://laracasts.com/favicons/apple-touch-icon.png' />
+  <link rel='icon' href='/tutorials/images/favicons/apple-touch-icon.png' />
+
+  
+
+ <link rel='stylesheet' type="text/css" href=' /tutorials/dist/codemirror_master.css'/>
+
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="/tutorials/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/tutorials/css/highlightjs.min.css">
+  <link rel="stylesheet" href="/tutorials/css/resizable.css">
+  <link rel="stylesheet" href="/tutorials/css/style.css">
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+
+
+</head>
+<body data-afterDomain="tutorials">
+<nav class="navbar navbar-expand-lg navbar-light bg-light main_menu">
+  <a class="navbar-brand" href="/tutorials/">Learning 101</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+      
+      
+        <li class='nav-item '>
+          <a class="nav-link" href='/tutorials/'>home</a>
+        </li>
+      
+        <li class='nav-item '>
+          <a class="nav-link" href='/tutorials/decks/'>decks</a>
+        </li>
+      
+        <li class='nav-item '>
+          <a class="nav-link" href='/tutorials/tutorials/'>tutorials</a>
+        </li>
+      
+        <li class='nav-item '>
+          <a class="nav-link" href='/tutorials/daily-journal/'>dj</a>
+        </li>
+      
+        <li class='nav-item '>
+          <a class="nav-link" href='/tutorials/daily-science/'>ds</a>
+        </li>
+      
+        <li class='nav-item '>
+          <a class="nav-link" href='/tutorials/international-affairs/'>ia</a>
+        </li>
+      
+        <li class='nav-item '>
+          <a class="nav-link" href='/tutorials/bangladesh-affairs/'>ba</a>
+        </li>
+      
+        <li class='nav-item '>
+          <a class="nav-link" href='/tutorials/math/'>math</a>
+        </li>
+      
+        <li class='nav-item '>
+          <a class="nav-link" href='/tutorials/english/'>english</a>
+        </li>
+      
+        <li class='nav-item '>
+          <a class="nav-link" href='/tutorials/dates/'>dates</a>
+        </li>
+      
+        <li class='nav-item '>
+          <a class="nav-link" href='/tutorials/about/'>about</a>
+        </li>
+      
+
+
+    </ul>
+    <div class='d-flex justify-content-center align-items-center mr-4' id="toggle_editor_button">
+      <button class="btn">toggle editor</button>
+    </div>
+    <div id="search_box" class="search_result_box d-inline my-2">
+      
+      
+    </div>
+  </div>
+  
+</nav>
+
+<div class="center mt-4">
+  <div class="row">
+    <div class="col-md-9">
+      <div class="mt-3">
+      
+<div id="single_page_content">
+  <h1 class="post_title">
+    <a href="/tutorials/decks/w3schools-jquery/">W3schools Jquery</a>
+  </h1>
+  <hr/>
+
+  
+<div class='author meta ml-1'>
+  
+    <i class='fa fa-user'></i>
+    <a href='https://polodev.github.io/tutorials//authors/polo-dev'>
+      Polo Dev
+    </a>
+  
+</div>
+
+
+<div class="meta">
+  <span class="date">
+    <i class='fa fa-calendar'></i>
+    July 28, 2018
+  </span>
+  <span class='reading_time'>
+      <i class='fa fa-clock'></i>
+    12 minutes
+  </span>
+  
+    <span class="category-block">
+      <i class='fa fa-folder'></i>
+      
+        
+        <a href="https://polodev.github.io/tutorials/categories/javascript">
+          javascript
+        </a>
+      
+        ,
+        <a href="https://polodev.github.io/tutorials/categories/jquery">
+          jquery
+        </a>
+      
+        ,
+        <a href="https://polodev.github.io/tutorials/categories/front-end">
+          front-end
+        </a>
+      
+    </span>
+  
+
+</div>
+
+
+  
+  <div class="toc">
+    <h2>
+      Table of Contents
+      <span id="toc_toggle_span">[hide]</span>
+    </h2>
+    <div id='toc_content'>
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#1-basic-syntax">1 - Basic syntax</a></li>
+<li><a href="#2-the-document-ready-event">2 - The Document Ready Event</a></li>
+<li><a href="#3-selects-the-first-li-element-of-the-first-ul">3 - Selects the first <code>&lt;li&gt;</code> element of the first <code>&lt;ul&gt;</code></a></li>
+<li><a href="#4-selects-the-first-li-element-of-every-ul">4 - Selects the first <code>&lt;li&gt;</code> element of every <code>&lt;ul&gt;</code></a></li>
+<li><a href="#5-selects-all-a-elements-with-a-target-attribute-value-equal-to-blank">5 - Selects all <code>&lt;a&gt;</code> elements with a target attribute value equal to <code>&quot;_blank&quot;</code></a></li>
+<li><a href="#6-selects-all-a-elements-with-a-target-attribute-value-not-equal-to-blank">6 - Selects all <code>&lt;a&gt;</code> elements with a target attribute value NOT equal to <code>&quot;_blank&quot;</code></a></li>
+<li><a href="#6-selects-all-button-elements-and-input-elements-of-type-button">6 - Selects all <code>&lt;button&gt;</code> elements and <code>&lt;input&gt;</code> elements of <code>type=&quot;button&quot;</code></a></li>
+<li><a href="#7-mouse-events">7 - Mouse Events</a></li>
+<li><a href="#8-keyboard-events">8 - Keyboard Events</a></li>
+<li><a href="#9-form-events">9 - Form Events</a></li>
+<li><a href="#10-document-window-events">10 - Document/Window Events</a></li>
+<li><a href="#11-click-method">11 - Click method</a></li>
+<li><a href="#12-the-on-method">12 - The on() Method</a></li>
+<li><a href="#13-multiple-event-handlers-to-a-single-element">13 - multiple event handlers to a single element:</a></li>
+<li><a href="#14-hide-in-jquery">14 - hide in jquery</a></li>
+<li><a href="#15-show-in-jquery">15 - show in jquery</a></li>
+<li><a href="#16-jquery-toggle">16 - jQuery toggle()</a></li>
+<li><a href="#17-jquery-fade-method">17 - jquery fade method</a></li>
+<li><a href="#19-jquery-animations-the-animate-method">19 - jQuery Animations - The animate() Method</a></li>
+<li><a href="#20-jquery-animate-method-with-relative-value">20 - jQuery animate() method with relative value <code>+=</code></a></li>
+<li><a href="#21-jquery-animate-using-pre-defined-values">21 - jQuery animate() - Using Pre-defined Values</a></li>
+<li><a href="#22-jquery-animate-uses-queue-functionality">22 - jQuery animate() - Uses Queue Functionality</a></li>
+<li><a href="#23-jquery-stop-method">23 - jQuery stop() Method</a></li>
+<li><a href="#24-jquery-method-chaining">24 - jQuery Method Chaining</a></li>
+<li><a href="#24-get-content-from-html-page">24 - Get Content from HTML page</a></li>
+<li><a href="#25-how-to-get-content-with-the-jquery-text-and-html-methods">25 - how to get content with the jQuery text() and html() methods</a></li>
+<li><a href="#26-how-to-get-the-value-of-an-input-field-with-the-jquery-val">26 - how to get the value of an input field with the jQuery val()</a></li>
+<li><a href="#27-get-attributes-attr">27 - Get Attributes - attr()</a></li>
+<li><a href="#28-set-content-text-html-and-val">28 - Set Content - text(), html(), and val()</a></li>
+<li><a href="#29-a-callback-function-for-text-html-and-val">29 - A Callback Function for text(), html(), and val()</a></li>
+<li><a href="#30-set-attributes-attr">30 - Set Attributes - attr()</a></li>
+<li><a href="#31-a-callback-function-for-attr">31 - A Callback Function for attr()</a></li>
+<li><a href="#32-add-elements">32 -  Add Elements</a></li>
+<li><a href="#33-remove-elements">33 - Remove Elements</a></li>
+<li><a href="#34-jquery-manipulating-css">34 - jQuery Manipulating CSS</a></li>
+<li><a href="#35-jquery-css">35 - jQuery - css()</a></li>
+<li><a href="#36-set-multiple-css-properties">36 - Set Multiple CSS Properties</a></li>
+<li><a href="#37-jquery-dimension-methods">37 - jQuery Dimension Methods</a></li>
+<li><a href="#38-jquery-width-and-height-method">38 - jquery width and height method</a></li>
+<li><a href="#39-jquery-innerwidth-and-innerheight-methods">39 - jQuery innerWidth() and innerHeight() Methods</a></li>
+<li><a href="#40-jquery-outerwidth-and-outerheight-methods">40 - jQuery outerWidth() and outerHeight() Methods</a></li>
+<li><a href="#41-document-and-window-width">41 - document and window width</a></li>
+<li><a href="#42-sets-the-width-and-height-of-a-specified-div-element">42 - sets the width and height of a specified <code>&lt;div&gt;</code> element:</a></li>
+<li><a href="#43-what-is-traversing">43 - What is Traversing?</a></li>
+<li><a href="#44-jquery-traversing-ancestors">44 - jQuery Traversing - Ancestors</a></li>
+<li><a href="#45-jquery-parent">45 - jQuery parent()</a></li>
+<li><a href="#46-jquery-parents-method">46 - jQuery parents() Method</a></li>
+<li><a href="#47-jquery-parentsuntil-method">47 - jQuery parentsUntil() Method</a></li>
+<li><a href="#48-jquery-traversing-descendants">48 - jQuery Traversing - Descendants</a></li>
+<li><a href="#49-jquery-children-method">49 - jQuery children() Method</a></li>
+<li><a href="#50-query-find-method">50 - Query find() Method</a></li>
+<li><a href="#51-traversing-sideways-in-the-dom-tree">51 - Traversing Sideways in The DOM Tree</a></li>
+<li><a href="#52-jquery-siblings-method">52 - jQuery siblings() Method</a></li>
+<li><a href="#53-jquery-next-method">53 - jQuery next() Method</a></li>
+<li><a href="#54-jquery-nextall-method">54 - jQuery nextAll() Method</a></li>
+<li><a href="#55-jquery-nextuntil-method">55 - jQuery nextUntil() Method</a></li>
+<li><a href="#56-jquery-prev-prevall-prevuntil-methods">56 - jQuery prev(), prevAll() &amp; prevUntil() Methods</a></li>
+<li><a href="#57-jquery-traversing-filtering">57 - jQuery Traversing - Filtering</a></li>
+<li><a href="#58-jquery-first-method">58 - jQuery first() Method</a></li>
+<li><a href="#59-jquery-last-method">59 - jQuery last() Method</a></li>
+<li><a href="#60-jquery-eq-method">60 - jQuery eq() method</a></li>
+<li><a href="#61-jquery-filter-method">61 - jQuery filter() Method</a></li>
+<li><a href="#62-jquery-not-method-opposite-of-filter-method">62 - jQuery not() Method ( opposite of <code>filter</code> method )</a></li>
+<li><a href="#63-jquery-ajax-load-method">63 - jQuery - AJAX load() Method</a></li>
+<li><a href="#64-jquery-get-method">64 - jQuery $.get() Method</a></li>
+<li><a href="#65-jquery-post-method">65 - jQuery $.post() Method</a></li>
+<li><a href="#66-jquery-noconflict-method">66 -  jQuery noConflict() Method</a></li>
+<li><a href="#67-a-list-filter">67 - a list filter</a></li>
+<li><a href="#68-a-table-filter">68 - a table filter</a></li>
+<li><a href="#69-filter-anything-inside-a-div">69 - filter anything inside a div</a></li>
+</ul>
+</nav>
+    </div>
+    
+  </div>
+  
+
+  <div class='article'>
+    
+
+<h1 id="1-basic-syntax">1 - Basic syntax</h1>
+
+<pre><code class="language-js">$(selector).action()
+</code></pre>
+
+<h1 id="2-the-document-ready-event">2 - The Document Ready Event</h1>
+
+<pre><code class="language-js">$(document).ready(function(){
+ // jQuery methods go here...
+});
+// shorter
+$(function(){
+ // jQuery methods go here...
+});
+</code></pre>
+
+<h1 id="3-selects-the-first-li-element-of-the-first-ul">3 - Selects the first <code>&lt;li&gt;</code> element of the first <code>&lt;ul&gt;</code></h1>
+
+<pre><code class="language-js">$(&quot;ul li:first&quot;)
+</code></pre>
+
+<h1 id="4-selects-the-first-li-element-of-every-ul">4 - Selects the first <code>&lt;li&gt;</code> element of every <code>&lt;ul&gt;</code></h1>
+
+<pre><code class="language-js">$(&quot;ul li:first-child&quot;)
+</code></pre>
+
+<h1 id="5-selects-all-a-elements-with-a-target-attribute-value-equal-to-blank">5 - Selects all <code>&lt;a&gt;</code> elements with a target attribute value equal to <code>&quot;_blank&quot;</code></h1>
+
+<pre><code class="language-js">$(&quot;a[target='_blank']&quot;)
+</code></pre>
+
+<h1 id="6-selects-all-a-elements-with-a-target-attribute-value-not-equal-to-blank">6 - Selects all <code>&lt;a&gt;</code> elements with a target attribute value NOT equal to <code>&quot;_blank&quot;</code></h1>
+
+<pre><code class="language-js">$(&quot;a[target!='_blank']&quot;)
+</code></pre>
+
+<h1 id="6-selects-all-button-elements-and-input-elements-of-type-button">6 - Selects all <code>&lt;button&gt;</code> elements and <code>&lt;input&gt;</code> elements of <code>type=&quot;button&quot;</code></h1>
+
+<pre><code class="language-js">$(&quot;:button&quot;)
+</code></pre>
+
+<h1 id="7-mouse-events">7 - Mouse Events</h1>
+
+<ul>
+<li>click</li>
+<li>dblclick</li>
+<li>mouseenter</li>
+<li>mouseleave</li>
+<li>mousedown</li>
+<li>mouseup</li>
+<li>hover (combination of mouseenter and mouseleave)</li>
+</ul>
+
+<h1 id="8-keyboard-events">8 - Keyboard Events</h1>
+
+<ul>
+<li>keypress</li>
+<li>keydown</li>
+<li>keyup</li>
+<li>blur</li>
+</ul>
+
+<h1 id="9-form-events">9 - Form Events</h1>
+
+<ul>
+<li>submit</li>
+<li>change</li>
+<li>focus (attaches an event handler function to an HTML form field)</li>
+</ul>
+
+<h1 id="10-document-window-events">10 - Document/Window Events</h1>
+
+<ul>
+<li>load</li>
+<li>resize</li>
+<li>scroll</li>
+<li>unload</li>
+</ul>
+
+<h1 id="11-click-method">11 - Click method</h1>
+
+<pre><code class="language-js">$(&quot;p&quot;).click(function(){
+  $(this).hide();
+});
+</code></pre>
+
+<h1 id="12-the-on-method">12 - The on() Method</h1>
+
+<p>The on() method attaches one or more event handlers for the selected elements.</p>
+
+<pre><code class="language-js">$(&quot;p&quot;).on(&quot;click&quot;, function(){
+  $(this).hide();
+});
+</code></pre>
+
+<h1 id="13-multiple-event-handlers-to-a-single-element">13 - multiple event handlers to a single element:</h1>
+
+<pre><code class="language-js">$(&quot;p&quot;).on({
+  mouseenter: function(){
+    $(this).css(&quot;background-color&quot;, &quot;lightgray&quot;);
+  },
+  mouseleave: function(){
+    $(this).css(&quot;background-color&quot;, &quot;lightblue&quot;);
+  },
+  click: function(){
+    $(this).css(&quot;background-color&quot;, &quot;yellow&quot;);
+  }
+});
+</code></pre>
+
+<h1 id="14-hide-in-jquery">14 - hide in jquery</h1>
+
+<pre><code class="language-js">$(selector).hide(speed,callback);
+
+$(&quot;button&quot;).click(function(){
+  $(&quot;p&quot;).hide(1000);
+});
+</code></pre>
+
+<h1 id="15-show-in-jquery">15 - show in jquery</h1>
+
+<pre><code class="language-js">$(selector).show(speed_optional,callback_optional);
+
+$(&quot;button&quot;).click(function(){
+  $(&quot;p&quot;).hide(1000);
+});
+</code></pre>
+
+<h1 id="16-jquery-toggle">16 - jQuery toggle()</h1>
+
+<p>combination of hide() and show() method</p>
+
+<pre><code class="language-js">$(selector).toggle(speed,callback);
+
+$(&quot;button&quot;).click(function(){
+  $(&quot;p&quot;).toggle();
+});
+</code></pre>
+
+<h1 id="17-jquery-fade-method">17 - jquery fade method</h1>
+
+<ul>
+<li>fadeIn() show the content</li>
+<li>fadeOut() hide the content</li>
+<li>fadeToggle()</li>
+<li>fadeTo()
+~~~js
+//syntax for fadeIn, fadeOut, fadeToggle
+$(selector).fadeIn(speed,callback);</li>
+</ul>
+
+<p>//syntax for fadeTo which taking 3 parameters
+$(selector).fadeTo(speed,opacity,callback);</p>
+
+<pre><code>
+# 18 - jQuery Effects - Sliding
+
+* slideDown() show the content
+* slideUp() hide the content
+* slideToggle()
+
+~~~js
+$(selector).slideDown(speed,callback);
+$(&quot;#flip&quot;).click(function(){
+  $(&quot;#panel&quot;).slideDown();
+});
+</code></pre>
+
+<h1 id="19-jquery-animations-the-animate-method">19 - jQuery Animations - The animate() Method</h1>
+
+<pre><code class="language-js">$(selector).animate({params},speed,callback);
+$(&quot;button&quot;).click(function(){
+  $(&quot;div&quot;).animate({
+    left: '250px',
+    opacity: '0.5',
+    height: '150px',
+    width: '150px'
+  });
+});
+</code></pre>
+
+<h1 id="20-jquery-animate-method-with-relative-value">20 - jQuery animate() method with relative value <code>+=</code></h1>
+
+<pre><code class="language-js">$(&quot;button&quot;).click(function(){
+  $(&quot;div&quot;).animate({
+    left: '250px',
+    height: '+=150px',
+    width: '+=150px'
+  });
+});
+</code></pre>
+
+<h1 id="21-jquery-animate-using-pre-defined-values">21 - jQuery animate() - Using Pre-defined Values</h1>
+
+<pre><code class="language-js">$(&quot;button&quot;).click(function(){
+  $(&quot;div&quot;).animate({
+    height: 'toggle'
+  });
+});
+</code></pre>
+
+<h1 id="22-jquery-animate-uses-queue-functionality">22 - jQuery animate() - Uses Queue Functionality</h1>
+
+<p>if you write multiple animate() calls after each other, jQuery creates an &ldquo;internal&rdquo; queue with these method calls. Then it runs the animate calls ONE by ONE.</p>
+
+<pre><code class="language-js">$(&quot;button&quot;).click(function(){
+  var div = $(&quot;div&quot;);
+  div.animate({height: '300px', opacity: '0.4'}, &quot;slow&quot;);
+  div.animate({width: '300px', opacity: '0.8'}, &quot;slow&quot;);
+  div.animate({height: '100px', opacity: '0.4'}, &quot;slow&quot;);
+  div.animate({width: '100px', opacity: '0.8'}, &quot;slow&quot;);
+});
+</code></pre>
+
+<h1 id="23-jquery-stop-method">23 - jQuery stop() Method</h1>
+
+<p>The jQuery stop() method is used to stop an animation or effect before it is finished.</p>
+
+<pre><code class="language-js">/**
+ * stopAll parameter specifies whether also the
+ *  animation queue should be cleared or not.
+ *  Default is false, which means that only
+ *  the active animation will be stopped,
+ *  allowing any queued animations to be
+ *  performed afterwards.
+ *
+ *
+ *  The optional goToEnd parameter
+ *  specifies whether or not to complete
+ *  the current animation immediately.
+ *  Default is false.
+ *
+ */
+$(selector).stop(stopAll,goToEnd);
+$(&quot;#stop&quot;).click(function(){
+  $(&quot;#panel&quot;).stop();
+});
+</code></pre>
+
+<h1 id="24-jquery-method-chaining">24 - jQuery Method Chaining</h1>
+
+<p>there is a technique called chaining, that allows us to run multiple jQuery commands, one after the other, on the same element(s)</p>
+
+<pre><code class="language-js">$(&quot;#p1&quot;).css(&quot;color&quot;, &quot;red&quot;).slideUp(2000).slideDown(2000);
+//prettier format following - which should be preferred
+$(&quot;#p1&quot;).css(&quot;color&quot;, &quot;red&quot;)
+  .slideUp(2000)
+  .slideDown(2000);
+</code></pre>
+
+<h1 id="24-get-content-from-html-page">24 - Get Content from HTML page</h1>
+
+<ul>
+<li>text() - Sets or returns the text content of selected elements</li>
+<li>html() - Sets or returns the content of selected elements (including HTML markup)</li>
+<li>val() - Sets or returns the value of form fields</li>
+</ul>
+
+<h1 id="25-how-to-get-content-with-the-jquery-text-and-html-methods">25 - how to get content with the jQuery text() and html() methods</h1>
+
+<pre><code class="language-js">alert(&quot;Text: &quot; + $(&quot;#test&quot;).text());
+alert(&quot;HTML: &quot; + $(&quot;#test&quot;).html());
+</code></pre>
+
+<h1 id="26-how-to-get-the-value-of-an-input-field-with-the-jquery-val">26 - how to get the value of an input field with the jQuery val()</h1>
+
+<pre><code class="language-html">&lt;input type=&quot;text&quot; id=&quot;test&quot; value=&quot;Mickey Mouse&quot;&gt;&lt;/p&gt;
+</code></pre>
+
+<pre><code class="language-js">$(&quot;button&quot;).click(function(){
+  alert(&quot;Value: &quot; + $(&quot;#test&quot;).val());
+});
+</code></pre>
+
+<h1 id="27-get-attributes-attr">27 - Get Attributes - attr()</h1>
+
+<p>The jQuery attr() method is used to get attribute values.</p>
+
+<pre><code class="language-js">alert($(&quot;#w3s&quot;).attr(&quot;href&quot;));
+</code></pre>
+
+<h1 id="28-set-content-text-html-and-val">28 - Set Content - text(), html(), and val()</h1>
+
+<ul>
+<li>text() - Sets or returns the text content of selected elements</li>
+<li>html() - Sets or returns the content of selected elements (including HTML markup)</li>
+<li>val() - Sets or returns the value of form fields
+~~~js
+$(&ldquo;#test2&rdquo;).html(&rdquo;<b>Hello world!</b>&rdquo;);
+~~~</li>
+</ul>
+
+<h1 id="29-a-callback-function-for-text-html-and-val">29 - A Callback Function for text(), html(), and val()</h1>
+
+<p>All of the three jQuery methods above: text(), html(), and val(), also come with a callback function. The callback function has two parameters: the index of the current element in the list of elements selected and the original (old) value. You then return the string you wish to use as the new value from the function.</p>
+
+<pre><code class="language-js">$(&quot;#test1&quot;).text(function(i, origText){
+  return &quot;Old text: &quot; + origText + &quot; New text: Hello world! (index: &quot; + i + &quot;)&quot;;
+});
+</code></pre>
+
+<h1 id="30-set-attributes-attr">30 - Set Attributes - attr()</h1>
+
+<pre><code class="language-js">$(&quot;#w3s&quot;).attr(&quot;href&quot;, &quot;https://www.w3schools.com/jquery/&quot;);
+// set multiple attribute using attr method
+$(&quot;#w3s&quot;).attr({
+  &quot;href&quot; : &quot;https://www.w3schools.com/jquery/&quot;,
+  &quot;title&quot; : &quot;W3Schools jQuery Tutorial&quot;
+});
+</code></pre>
+
+<h1 id="31-a-callback-function-for-attr">31 - A Callback Function for attr()</h1>
+
+<pre><code class="language-js">$(&quot;#w3s&quot;).attr(&quot;href&quot;, function(i, origValue){
+    return origValue + &quot;/jquery/&quot;;
+});
+</code></pre>
+
+<h1 id="32-add-elements">32 -  Add Elements</h1>
+
+<ul>
+<li>append() - Inserts content at the end of the selected elements</li>
+<li>prepend() - Inserts content at the beginning of the selected elements</li>
+<li>after() - Inserts content after the selected elements</li>
+<li>before() - Inserts content before the selected elements
+~~~js
+$(&ldquo;p&rdquo;).append(&ldquo;Some appended text.&rdquo;);
+function appendText() {
+var txt1 = &ldquo;<p>Text.</p>&rdquo;;               // Create element with HTML
+var txt2 = $(&rdquo;<p></p>&rdquo;).text(&ldquo;Text.&rdquo;);   // Create with jQuery
+var txt3 = document.createElement(&ldquo;p&rdquo;);  // Create with DOM
+txt3.innerHTML = &ldquo;Text.&rdquo;;
+$(&ldquo;body&rdquo;).append(txt1, txt2, txt3);      // Append the new elements
+}
+~~~</li>
+</ul>
+
+<h1 id="33-remove-elements">33 - Remove Elements</h1>
+
+<ul>
+<li>remove() - Removes the selected element (and its child elements)</li>
+<li>empty() - Removes the child elements from the selected element
+~~~js
+$(&ldquo;#div1&rdquo;).remove();
+$(&ldquo;#div1&rdquo;).empty();
+~~~</li>
+</ul>
+
+<h1 id="34-jquery-manipulating-css">34 - jQuery Manipulating CSS</h1>
+
+<ul>
+<li>addClass() - Adds one or more classes to the selected elements</li>
+<li>removeClass() - Removes one or more classes from the selected elements</li>
+<li>toggleClass() - Toggles between adding/removing classes from the selected elements</li>
+<li>css() - Sets or returns the style attribute</li>
+</ul>
+
+<pre><code class="language-js">$(&quot;button&quot;).click(function(){
+  $(&quot;h1, h2, p&quot;).addClass(&quot;blue&quot;);
+  $(&quot;div&quot;).addClass(&quot;important&quot;);
+  // multiple class by giving space
+  $(&quot;#div1&quot;).addClass(&quot;important blue&quot;);
+  // remove class
+  $(&quot;h1, h2, p&quot;).removeClass(&quot;blue&quot;);
+});
+</code></pre>
+
+<h1 id="35-jquery-css">35 - jQuery - css()</h1>
+
+<p>The css() method sets or returns one or more style properties for the selected elements.</p>
+
+<pre><code class="language-js">// return propertyname
+css(&quot;propertyname&quot;);
+//set property name
+css(&quot;propertyname&quot;,&quot;value&quot;);
+$(&quot;p&quot;).css(&quot;background-color&quot;, &quot;yellow&quot;);
+
+</code></pre>
+
+<h1 id="36-set-multiple-css-properties">36 - Set Multiple CSS Properties</h1>
+
+<pre><code class="language-js">css({&quot;propertyname&quot;:&quot;value&quot;,&quot;propertyname&quot;:&quot;value&quot;,...});
+$(&quot;p&quot;).css({&quot;background-color&quot;: &quot;yellow&quot;, &quot;font-size&quot;: &quot;200%&quot;});
+
+</code></pre>
+
+<h1 id="37-jquery-dimension-methods">37 - jQuery Dimension Methods</h1>
+
+<ul>
+<li>width()</li>
+<li>height()</li>
+<li>innerWidth()</li>
+<li>innerHeight()</li>
+<li>outerWidth()</li>
+<li>outerHeight()</li>
+</ul>
+
+<p><img src="https://www.w3schools.com/Jquery/img_jquerydim.gif" alt="jquery dimension" /></p>
+
+<h1 id="38-jquery-width-and-height-method">38 - jquery width and height method</h1>
+
+<ul>
+<li>The width() method sets or returns the width of an element (excludes padding, border and margin).</li>
+<li>The height() method sets or returns the height of an element (excludes padding, border and margin).</li>
+</ul>
+
+<pre><code class="language-js">$(&quot;button&quot;).click(function(){
+  var txt = &quot;&quot;;
+  txt += &quot;Width: &quot; + $(&quot;#div1&quot;).width() + &quot;&lt;/br&gt;&quot;;
+  txt += &quot;Height: &quot; + $(&quot;#div1&quot;).height();
+  $(&quot;#div1&quot;).html(txt);
+});
+</code></pre>
+
+<h1 id="39-jquery-innerwidth-and-innerheight-methods">39 - jQuery innerWidth() and innerHeight() Methods</h1>
+
+<ul>
+<li>The innerWidth()  return (elementWidth + padding)</li>
+<li>The innerHeight() return (elementHeight + padding)</li>
+</ul>
+
+<pre><code class="language-js">$(&quot;button&quot;).click(function(){
+  var txt = &quot;&quot;;
+  txt += &quot;Inner width: &quot; + $(&quot;#div1&quot;).innerWidth() + &quot;&lt;/br&gt;&quot;;
+  txt += &quot;Inner height: &quot; + $(&quot;#div1&quot;).innerHeight();
+  $(&quot;#div1&quot;).html(txt);
+});
+</code></pre>
+
+<h1 id="40-jquery-outerwidth-and-outerheight-methods">40 - jQuery outerWidth() and outerHeight() Methods</h1>
+
+<ul>
+<li>The outerWidth() return (elementWidth + padding + border)</li>
+<li>The outerHeight()return (elementHeight + padding + border)</li>
+<li>The outerWidth(true) return (elementWidth + padding + border + margin)</li>
+<li>The outerHeight(true)return (elementHeight + padding + border + margin)</li>
+</ul>
+
+<pre><code class="language-js">var txt = &quot;Outer height: &quot; + $(&quot;#div1&quot;).outerHeight();
+var txt = &quot;Outer height: &quot; + $(&quot;#div1&quot;).outerHeight(true);
+</code></pre>
+
+<h1 id="41-document-and-window-width">41 - document and window width</h1>
+
+<pre><code class="language-js">$(document).width()
+$(document).height()
+$(window).width()
+$(window).height()
+</code></pre>
+
+<h1 id="42-sets-the-width-and-height-of-a-specified-div-element">42 - sets the width and height of a specified <code>&lt;div&gt;</code> element:</h1>
+
+<pre><code class="language-js">$(&quot;button&quot;).click(function(){
+  $(&quot;#div1&quot;).width(500).height(500);
+});
+</code></pre>
+
+<h1 id="43-what-is-traversing">43 - What is Traversing?</h1>
+
+<p>jQuery traversing, which means &ldquo;move through&rdquo;, are used to &ldquo;find&rdquo; (or select) HTML elements based on their relation to other elements. Start with one selection and move through that selection until you reach the elements you desire.</p>
+
+<h1 id="44-jquery-traversing-ancestors">44 - jQuery Traversing - Ancestors</h1>
+
+<p>An ancestor is a parent, grandparent, great-grandparent, and so on.
+* parent()
+* parents()
+* parentsUntil()</p>
+
+<h1 id="45-jquery-parent">45 - jQuery parent()</h1>
+
+<p>The parent() method returns the direct parent element of the selected element.
+This method only traverse a single level up the DOM tree.</p>
+
+<pre><code class="language-js">$(&quot;span&quot;).parent();
+</code></pre>
+
+<h1 id="46-jquery-parents-method">46 - jQuery parents() Method</h1>
+
+<p>The parents() method returns all ancestor elements of the selected element, all the way up to the document&rsquo;s root element <code>(&lt;html&gt;)</code>.</p>
+
+<pre><code class="language-js">$(&quot;span&quot;).parents();
+$(&quot;span&quot;).parents(&quot;ul&quot;);
+</code></pre>
+
+<h1 id="47-jquery-parentsuntil-method">47 - jQuery parentsUntil() Method</h1>
+
+<p>The parentsUntil() method returns all ancestor elements between two given arguments.
+The following example returns all ancestor elements between a <code>&lt;span&gt;</code> and a <code>&lt;div&gt;</code> element</p>
+
+<pre><code class="language-js">$(&quot;span&quot;).parentsUntil(&quot;div&quot;);
+</code></pre>
+
+<h1 id="48-jquery-traversing-descendants">48 - jQuery Traversing - Descendants</h1>
+
+<p>A descendant is a child, grandchild, great-grandchild, and so on.
+* children()
+* find()</p>
+
+<h1 id="49-jquery-children-method">49 - jQuery children() Method</h1>
+
+<p>The children() method returns all direct children of the selected element.
+This method only traverse a single level down the DOM tree.</p>
+
+<pre><code class="language-js">$(&quot;div&quot;).children();
+</code></pre>
+
+<p>You can also use an optional parameter to filter the search for children.
+The following example returns all <code>&lt;p&gt;</code> elements with the class name &ldquo;first&rdquo;, that are direct children of <code>&lt;div&gt;</code>:</p>
+
+<pre><code class="language-js">$(&quot;div&quot;).children(&quot;p.first&quot;);
+</code></pre>
+
+<h1 id="50-query-find-method">50 - Query find() Method</h1>
+
+<p>The find() method returns descendant elements of the selected element, all the way down to the last descendant.
+The following example returns all <code>&lt;span&gt;</code> elements that are descendants of <code>&lt;div&gt;</code></p>
+
+<pre><code class="language-js">$(&quot;div&quot;).find(&quot;span&quot;);
+</code></pre>
+
+<p>The following example returns all descendants of <code>&lt;div&gt;</code></p>
+
+<pre><code class="language-js">$(&quot;div&quot;).find(&quot;*&quot;);
+</code></pre>
+
+<h1 id="51-traversing-sideways-in-the-dom-tree">51 - Traversing Sideways in The DOM Tree</h1>
+
+<ul>
+<li>siblings()</li>
+<li>next()</li>
+<li>nextAll()</li>
+<li>nextUntil()</li>
+<li>prev()</li>
+<li>prevAll()</li>
+<li>prevUntil()</li>
+</ul>
+
+<p>(next, nextAll, nextAll) sounds like (parent, parents, parentsUntil)</p>
+
+<h1 id="52-jquery-siblings-method">52 - jQuery siblings() Method</h1>
+
+<p>The siblings() method returns all sibling elements of the selected element.
+The following example returns all sibling elements of <code>&lt;h2&gt;</code></p>
+
+<pre><code class="language-js">$(&quot;h2&quot;).siblings();
+</code></pre>
+
+<p>You can also use an optional parameter to filter the search for siblings.
+The following example returns all sibling elements of <code>&lt;h2&gt;</code> that are <code>&lt;p&gt;</code> elements</p>
+
+<pre><code class="language-js">$(&quot;h2&quot;).siblings(&quot;p&quot;);
+</code></pre>
+
+<h1 id="53-jquery-next-method">53 - jQuery next() Method</h1>
+
+<p>The next() method returns the next sibling element of the selected element.
+The following example returns the next sibling of <code>&lt;h2&gt;</code></p>
+
+<pre><code class="language-js">$(&quot;h2&quot;).next();
+</code></pre>
+
+<h1 id="54-jquery-nextall-method">54 - jQuery nextAll() Method</h1>
+
+<p>The nextAll() method returns all next sibling elements of the selected element.
+The following example returns all next sibling elements of <code>&lt;h2&gt;</code></p>
+
+<pre><code class="language-js">$(&quot;h2&quot;).nextAll();
+</code></pre>
+
+<h1 id="55-jquery-nextuntil-method">55 - jQuery nextUntil() Method</h1>
+
+<p>The nextUntil() method returns all next sibling elements between two given arguments.
+The following example returns all sibling elements between a <code>&lt;h2&gt;</code> and a <code>&lt;h6&gt;</code> element</p>
+
+<pre><code class="language-js">$(&quot;h2&quot;).nextUntil(&quot;h6&quot;);
+</code></pre>
+
+<h1 id="56-jquery-prev-prevall-prevuntil-methods">56 - jQuery prev(), prevAll() &amp; prevUntil() Methods</h1>
+
+<p>The prev(), prevAll() and prevUntil() methods work just like the methods (next, nextAll, nextUntil) but with reverse functionality: they return previous sibling elements (traverse backwards along sibling elements in the DOM tree, instead of forward).</p>
+
+<h1 id="57-jquery-traversing-filtering">57 - jQuery Traversing - Filtering</h1>
+
+<ul>
+<li>first()</li>
+<li>last()</li>
+<li>eq()</li>
+<li>filter()</li>
+<li>not()</li>
+</ul>
+
+<p>The most basic filtering methods are first(), last() and eq(), which allow you to select a specific element based on its position in a group of elements.
+Other filtering methods, like filter() and not() allow you to select elements that match, or do not match, a certain criteria.</p>
+
+<h1 id="58-jquery-first-method">58 - jQuery first() Method</h1>
+
+<p>The first() method returns the first element of the specified elements.
+The following example selects the first <code>&lt;div&gt;</code> element</p>
+
+<pre><code class="language-js">$(&quot;div&quot;).first().css(&quot;background-color&quot;, &quot;yellow&quot;);
+</code></pre>
+
+<h1 id="59-jquery-last-method">59 - jQuery last() Method</h1>
+
+<p>The last() method returns the last element of the specified elements.</p>
+
+<p>The following example selects the last <code>&lt;div&gt;</code> element</p>
+
+<pre><code class="language-js">$(&quot;div&quot;).last().css(&quot;background-color&quot;, &quot;yellow&quot;);
+</code></pre>
+
+<h1 id="60-jquery-eq-method">60 - jQuery eq() method</h1>
+
+<p>The eq() method returns an element with a specific index number of the selected elements.
+The index numbers start at 0, so the first element will have the index number 0 and not 1. The following example selects the second <p> element (index number 1):</p>
+
+<pre><code class="language-js">$(&quot;p&quot;).eq(1).css(&quot;background-color&quot;, &quot;yellow&quot;);
+</code></pre>
+
+<h1 id="61-jquery-filter-method">61 - jQuery filter() Method</h1>
+
+<p>The filter() method lets you specify a criteria. Elements that do not match the criteria are removed from the selection, and those that match will be returned.
+The following example returns all <code>&lt;p&gt;</code> elements with class name &ldquo;intro&rdquo;:</p>
+
+<pre><code class="language-js">    $(&quot;p&quot;).filter(&quot;.intro&quot;).css(&quot;background-color&quot;, &quot;yellow&quot;);
+
+</code></pre>
+
+<h1 id="62-jquery-not-method-opposite-of-filter-method">62 - jQuery not() Method ( opposite of <code>filter</code> method )</h1>
+
+<p>The not() method returns all elements that do not match the criteria.
+The following example returns all <code>&lt;p&gt;</code> elements that do not have class name &ldquo;intro&rdquo;:</p>
+
+<pre><code class="language-js">$(&quot;p&quot;).not(&quot;.intro&quot;).css(&quot;background-color&quot;, &quot;yellow&quot;);
+</code></pre>
+
+<h1 id="63-jquery-ajax-load-method">63 - jQuery - AJAX load() Method</h1>
+
+<p>The jQuery load() method is a simple, but powerful AJAX method.</p>
+
+<pre><code class="language-js">$(selector).load(URL,data,callback);
+</code></pre>
+
+<p>It is also possible to add a jQuery selector to the URL parameter.
+The following example loads the content of the element with <code>id=&quot;p1&quot;</code>, inside the file &ldquo;demo_test.txt&rdquo;, into a specific <code>&lt;div&gt;</code> element</p>
+
+<pre><code class="language-js">$(&quot;#div1&quot;).load(&quot;demo_test.txt #p1&quot;);
+</code></pre>
+
+<p>The optional callback parameter specifies a callback function to run when the load() method is completed. The callback function can have different parameters:
+* responseTxt - contains the resulting content if the call succeeds
+* statusTxt - contains the status of the call
+* xhr - contains the XMLHttpRequest object</p>
+
+<pre><code class="language-js">$(&quot;button&quot;).click(function(){
+  $(&quot;#div1&quot;).load(&quot;demo_test.txt&quot;, function(responseTxt, statusTxt, xhr){
+    if(statusTxt == &quot;success&quot;) {
+      alert(&quot;External content loaded successfully!&quot;);
+    }
+    if(statusTxt == &quot;error&quot;) {
+      alert(&quot;Error: &quot; + xhr.status + &quot;: &quot; + xhr.statusText);
+    }
+  });
+});
+</code></pre>
+
+<h1 id="64-jquery-get-method">64 - jQuery $.get() Method</h1>
+
+<p>The $.get() method requests data from the server with an HTTP GET request.</p>
+
+<pre><code class="language-js">$.get(URL,callback);
+$.get(&quot;demo_test.asp&quot;, function(data, status){
+  alert(&quot;Data: &quot; + data + &quot;\nStatus: &quot; + status);
+});
+</code></pre>
+
+<h1 id="65-jquery-post-method">65 - jQuery $.post() Method</h1>
+
+<p>The $.post() method requests data from the server using an HTTP POST request.</p>
+
+<pre><code class="language-js">$.post(URL,data,callback);
+$(&quot;button&quot;).click(function(){
+  $.post(&quot;demo_test_post.asp&quot;,
+  {
+    name: &quot;Donald Duck&quot;,
+    city: &quot;Duckburg&quot;
+  },
+  function(data, status){
+    alert(&quot;Data: &quot; + data + &quot;\nStatus: &quot; + status);
+  });
+});
+</code></pre>
+
+<h1 id="66-jquery-noconflict-method">66 -  jQuery noConflict() Method</h1>
+
+<p>The noConflict() method releases the hold on the $ shortcut identifier, so that other scripts can use it.</p>
+
+<p>You can of course still use jQuery, simply by writing the full name instead of the shortcut:</p>
+
+<pre><code class="language-js">$.noConflict();
+jQuery(document).ready(function(){
+  jQuery(&quot;button&quot;).click(function(){
+    jQuery(&quot;p&quot;).text(&quot;jQuery is still working!&quot;);
+  });
+});
+</code></pre>
+
+<p>The noConflict() method returns a reference to jQuery, that you can save in a variable, for later use.</p>
+
+<pre><code class="language-js">var jq = $.noConflict();
+jq(document).ready(function(){
+  jq(&quot;button&quot;).click(function(){
+    jq(&quot;p&quot;).text(&quot;jQuery is still working!&quot;);
+  });
+});
+</code></pre>
+
+<p>If you have a block of jQuery code which uses the $ shortcut and you do not want to change it all, you can pass the $ sign in as a parameter to the ready method</p>
+
+<pre><code class="language-js">$.noConflict();
+jQuery(document).ready(function($){
+    $(&quot;button&quot;).click(function(){
+        $(&quot;p&quot;).text(&quot;jQuery is still working!&quot;);
+    });
+});
+</code></pre>
+
+<h1 id="67-a-list-filter">67 - a list filter</h1>
+
+<pre><code class="language-html">&lt;input id=&quot;myInput&quot; type=&quot;text&quot; placeholder=&quot;Search..&quot;&gt;
+&lt;br&gt;
+
+&lt;ul id=&quot;myList&quot;&gt;
+  &lt;li&gt;First item&lt;/li&gt;
+  &lt;li&gt;Second item&lt;/li&gt;
+  &lt;li&gt;Third item&lt;/li&gt;
+  &lt;li&gt;Fourth&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+<pre><code class="language-js">$(&quot;#myInput&quot;).on(&quot;keyup&quot;, function() {
+    var value = $(this).val().toLowerCase();
+    $(&quot;#myList li&quot;).filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) &gt; -1)
+    });
+  });
+</code></pre>
+
+<h1 id="68-a-table-filter">68 - a table filter</h1>
+
+<pre><code class="language-html">&lt;input id=&quot;myInput&quot; type=&quot;text&quot; placeholder=&quot;Search..&quot;&gt;
+&lt;br&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Firstname&lt;/th&gt;
+      &lt;th&gt;Lastname&lt;/th&gt;
+      &lt;th&gt;Email&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody id=&quot;myTable&quot;&gt;
+    &lt;tr&gt;
+      &lt;td&gt;John&lt;/td&gt;
+      &lt;td&gt;Doe&lt;/td&gt;
+      &lt;td&gt;john@example.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Anja&lt;/td&gt;
+      &lt;td&gt;Ravendale&lt;/td&gt;
+      &lt;td&gt;a_r@test.com&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+
+<pre><code class="language-js">$(&quot;#myInput&quot;).on(&quot;keyup&quot;, function() {
+  var value = $(this).val().toLowerCase();
+  $(&quot;#myTable tr&quot;).filter(function() {
+    $(this).toggle($(this).text().toLowerCase().indexOf(value) &gt; -1)
+  });
+});
+</code></pre>
+
+<h1 id="69-filter-anything-inside-a-div">69 - filter anything inside a div</h1>
+
+<pre><code class="language-html">&lt;input id=&quot;myInput&quot; type=&quot;text&quot; placeholder=&quot;Search..&quot;&gt;
+&lt;div id=&quot;myDIV&quot;&gt;
+  &lt;p&gt;I am a paragraph.&lt;/p&gt;
+  &lt;div&gt;I am a div element inside div.&lt;/div&gt;
+  &lt;button&gt;I am a button&lt;/button&gt;
+  &lt;button&gt;Another button&lt;/button&gt;
+  &lt;p&gt;Another paragraph.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+
+<pre><code class="language-js">$(&quot;#myInput&quot;).on(&quot;keyup&quot;, function() {
+    var value = $(this).val().toLowerCase();
+    $(&quot;#myDIV *&quot;).filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) &gt; -1)
+    });
+  });
+</code></pre>
+
+  </div>
+  
+  
+    <div class='tags py-3'>
+      Tags: 
+        <a href="https://polodev.github.io/tutorials/tags/jquery">
+          jquery
+        </a>
+      
+        <a href="https://polodev.github.io/tutorials/tags/javascript">
+          javascript
+        </a>
+      
+
+    </div>
+  
+  
+
+  <div class="text-center py-3">
+    
+    
+      <a class="btn btn-info" href="https://polodev.github.io/tutorials/decks/codeigniter/">Next Post</a>
+    
+  </div>
+
+</div>
+
+<div id="disqus_thread"></div>
+<script>
+
+
+
+
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://'+ "dev-learning" +'.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+      </div>
+    </div>
+    <div class="col-md-3">
+      <aside>
+        
+          <div class="card my-2">
+  <div class="card-header">
+    <h3>Deck Tags</h3>
+  </div>
+  <ul class="list-group">
+    
+    <li class="list-group-item">
+      <a class="btn btn-link" href="https://polodev.github.io/tutorials//dtags/codeigniter">Codeigniter</a> (1)
+    </li>
+    
+    <li class="list-group-item">
+      <a class="btn btn-link" href="https://polodev.github.io/tutorials//dtags/javascript">Javascript</a> (1)
+    </li>
+    
+    <li class="list-group-item">
+      <a class="btn btn-link" href="https://polodev.github.io/tutorials//dtags/jquery">Jquery</a> (1)
+    </li>
+    
+    <li class="list-group-item">
+      <a class="btn btn-link" href="https://polodev.github.io/tutorials//dtags/php">Php</a> (1)
+    </li>
+    
+  </ul>
+</div>
+
+        
+      </aside>
+    </div>
+  </div>
+</div>
+<div id='editor' class="hidden">
+  <div id='editor_inner'>
+    <div class='codemirror_area'>
+
+      <div class='codemirror_setting'>
+        <div class='codemirror_setting_inner pb-3'>
+          <div class='d-flex justify-content-between'>
+            <h4>setting</h4>
+            <button id="close_codemirror_setting_button" class="btn btn-secondary"><i class="fa fa-times"></i></button>
+          </div>
+          <hr/>
+        <div class='row'>
+
+
+          <div class='col-sm-4'>
+            <h3>Editor</h3>
+
+            <div class='form-check'>
+              <input name="vim" value="vim" type='checkbox' id="vim" class='form-check-input'/>
+              <label for='vim' class='form-check-label'>Enable Vim keymap</label>
+            </div>
+            
+            <div class='form-check'>
+              <input name="lineWrapping" value="lineWrapping" type='checkbox' id="lineWrapping" class='form-check-input'/>
+              <label for='lineWrapping' class='form-check-label'>Enable Line Wrapping</label>
+            </div>
+            
+
+            <div class='form-group'>
+              <label for='font_family'>Font Family</label>
+              <select name='font_family' id='font_family' class="form-control">
+                <option value='monaco'>Monaco</option>
+                <option value='menlo'>Menlo</option>
+                <option value='fira_code'>fira_code</option>
+                <option value='source_code_pro'>Source Code Pro</option>
+                <option value='ubuntu_mono'>Ubuntu Mono</option>
+              </select>
+            </div>
+            
+            <div class='form-group'>
+              <label for='font_size'>Font Size</label>
+              <select name='font_size' id='font_size'>
+                <option value='14px'>14px</option>
+                <option value='16px'>16px</option>
+                <option value='18px'>18px</option>
+                <option value='20px'>20px</option>
+                <option value='22px'>22px</option>
+                <option value='22px'>22px</option>
+                <option value='24px'>24px</option>
+                <option value='26px'>26px</option>
+                <option value='28px'>28px</option>
+                <option value='30px'>30px</option>
+              </select>
+            </div>
+            
+            <div class='input-group'>
+              <div class='input-group-prepend'>
+                <label for='tab_size'>tab size</label>
+              </div>
+              <input type='text' name='tab_size' id='tab_size' class="form-control" />
+              
+            </div>
+          </div>
+          <div class='col-sm-4'>
+            <h3>Theme</h3>
+            <div>
+              <div class='form-check'>
+                <input value="monokai" type='radio' class="form-check-input" id="monokai" name="theme" />
+                <label class="form-check-label" for='monokai'>monokai</label>
+              </div>
+              
+              <div class='form-check'>
+                <input value="material" type='radio' class="form-check-input" id="material" name="theme" />
+                <label class="form-check-label" for='material'>material</label>
+              </div>
+              
+              <div class='form-check'>
+                <input value="solarized" type='radio' class="form-check-input" id="solarized" name="theme" />
+                <label class="form-check-label" for='solarized'>solarized</label>
+              </div>
+              
+              <div class='form-check'>
+                <input value="tomorrow-night-bright" type='radio' class="form-check-input" id="tomorrow-night-bright" name="theme" />
+                <label class="form-check-label" for='tomorrow-night-bright'>tomorrow-night-bright</label>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class='col-sm-4'>
+            <h3>Mode</h3>
+              <div class='form-check'>
+                <input value="htmlmixed" type='radio' class="form-check-input" id="htmlmixed" name="mode" />
+                <label class="form-check-label" for='htmlmixed'>Html</label>
+              </div>
+              
+              <div class='form-check'>
+                <input value="css" type='radio' class="form-check-input" id="css" name="mode" />
+                <label class="form-check-label" for='css'>Css</label>
+              </div>
+              
+              <div class='form-check'>
+                <input value="javascript" type='radio' class="form-check-input" id="javascript" name="mode" />
+                <label class="form-check-label" for='javascript'>JavaScript</label>
+              </div>
+              
+              <div class='form-check'>
+                <input value="jsx" type='radio' class="form-check-input" id="jsx" name="mode" />
+                <label class="form-check-label" for='jsx'>Jsx</label>
+              </div>
+              
+              <div class='form-check'>
+                <input value="php" type='radio' class="form-check-input" id="php" name="mode" />
+                <label class="form-check-label"  for='php'>Php</label>
+              </div>
+              
+              <div class='form-check'>
+                <input value="sql" type='radio' class="form-check-input" id="sql" name="mode" />
+                <label class="form-check-label" for='sql'>Sql</label>
+              </div>
+              
+          </div>
+
+        </div>
+          
+        </div>
+      </div>
+
+      <div class='codemirror_wrapper'>
+
+        
+        <div id='codemirror_editor'></div>
+
+        <div class="codemirror_editor_button">
+          <button class='btn btn-danger' id="close_footer_panel_button"><i class="fa fa-times"></i></button>
+          <button class='btn btn-info' id="open_codemirror_setting_button"><i class="fa fa-wrench"></i></button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="/tutorials/js/jquery.min.js"></script>
+<script src="/tutorials/js/resizable.js"></script>
+
+
+
+
+ <script src='/tutorials/dist/codemirror_master.js'></script>
+
+
+<script src="/tutorials/js/popper.min.js"></script>
+<script src="/tutorials/js/bootstrap.min.js"></script>
+<script src="/tutorials/js/clipboard.min.js"></script>
+<script src="/tutorials/js/highlight.min.js"></script>
+<script src="/tutorials/js/script.js"></script>
+<script src="/tutorials/js/ecma.js"></script>
+
+
+
+<script>renderMathInElement(document.body);</script>
+
+</body>
+</html>

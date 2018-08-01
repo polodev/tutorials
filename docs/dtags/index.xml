@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dtags on Site</title>
+    <link>https://polodev.github.io/tutorials/dtags/</link>
+    <description>Recent content in Dtags on Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Jul 2018 15:26:09 +0600</lastBuildDate>
+    
+	<atom:link href="https://polodev.github.io/tutorials/dtags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Codeigniter</title>
+      <link>https://polodev.github.io/tutorials/dtags/codeigniter/</link>
+      <pubDate>Sat, 28 Jul 2018 15:26:09 +0600</pubDate>
+      
+      <guid>https://polodev.github.io/tutorials/dtags/codeigniter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Javascript</title>
+      <link>https://polodev.github.io/tutorials/dtags/javascript/</link>
+      <pubDate>Sat, 28 Jul 2018 15:26:09 +0600</pubDate>
+      
+      <guid>https://polodev.github.io/tutorials/dtags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jquery</title>
+      <link>https://polodev.github.io/tutorials/dtags/jquery/</link>
+      <pubDate>Sat, 28 Jul 2018 15:26:09 +0600</pubDate>
+      
+      <guid>https://polodev.github.io/tutorials/dtags/jquery/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Php</title>
+      <link>https://polodev.github.io/tutorials/dtags/php/</link>
+      <pubDate>Sat, 28 Jul 2018 15:26:09 +0600</pubDate>
+      
+      <guid>https://polodev.github.io/tutorials/dtags/php/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

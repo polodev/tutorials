@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bangladesh-affairs on Site</title>
+    <link>https://polodev.github.io/tutorials/bangladesh-affairs/</link>
+    <description>Recent content in Bangladesh-affairs on Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Jul 2018 15:48:31 +0600</lastBuildDate>
+    
+	<atom:link href="https://polodev.github.io/tutorials/bangladesh-affairs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bangladesh Affairs 101</title>
+      <link>https://polodev.github.io/tutorials/bangladesh-affairs/bangladesh-affairs-101/</link>
+      <pubDate>Sat, 28 Jul 2018 15:48:31 +0600</pubDate>
+      
+      <guid>https://polodev.github.io/tutorials/bangladesh-affairs/bangladesh-affairs-101/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning site</title>
+  <link rel="canonical" href="https://polodev.github.io/tutorials/decks/codeigniter/">
+  <link rel='icon' href='https://laracasts.com/favicons/apple-touch-icon.png' />
+  <link rel='icon' href='/tutorials/images/favicons/apple-touch-icon.png' />
+
+  
+
+ <link rel='stylesheet' type="text/css" href=' /tutorials/dist/codemirror_master.css'/>
+
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="/tutorials/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/tutorials/css/highlightjs.min.css">
+  <link rel="stylesheet" href="/tutorials/css/resizable.css">
+  <link rel="stylesheet" href="/tutorials/css/style.css">
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+
+
+</head>
+<body data-afterDomain="tutorials">
+<nav class="navbar navbar-expand-lg navbar-light bg-light main_menu">
+  <a class="navbar-brand" href="/tutorials/">Learning 101</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+      
+      
+        <li class='nav-item '>
+          <a class="nav-link" href='/tutorials/'>home</a>
+        </li>
+      
+        <li class='nav-item '>
+          <a class="nav-link" href='/tutorials/decks/'>decks</a>
+        </li>
+      
+        <li class='nav-item '>
+          <a class="nav-link" href='/tutorials/tutorials/'>tutorials</a>
+        </li>
+      
+        <li class='nav-item '>
+          <a class="nav-link" href='/tutorials/daily-journal/'>dj</a>
+        </li>
+      
+        <li class='nav-item '>
+          <a class="nav-link" href='/tutorials/daily-science/'>ds</a>
+        </li>
+      
+        <li class='nav-item '>
+          <a class="nav-link" href='/tutorials/international-affairs/'>ia</a>
+        </li>
+      
+        <li class='nav-item '>
+          <a class="nav-link" href='/tutorials/bangladesh-affairs/'>ba</a>
+        </li>
+      
+        <li class='nav-item '>
+          <a class="nav-link" href='/tutorials/math/'>math</a>
+        </li>
+      
+        <li class='nav-item '>
+          <a class="nav-link" href='/tutorials/english/'>english</a>
+        </li>
+      
+        <li class='nav-item '>
+          <a class="nav-link" href='/tutorials/dates/'>dates</a>
+        </li>
+      
+        <li class='nav-item '>
+          <a class="nav-link" href='/tutorials/about/'>about</a>
+        </li>
+      
+
+
+    </ul>
+    <div class='d-flex justify-content-center align-items-center mr-4' id="toggle_editor_button">
+      <button class="btn">toggle editor</button>
+    </div>
+    <div id="search_box" class="search_result_box d-inline my-2">
+      
+      
+    </div>
+  </div>
+  
+</nav>
+
+<div class="center mt-4">
+  <div class="row">
+    <div class="col-md-9">
+      <div class="mt-3">
+      
+<div id="single_page_content">
+  <h1 class="post_title">
+    <a href="/tutorials/decks/codeigniter/">CodeIgniter</a>
+  </h1>
+  <hr/>
+
+  
+<div class='author meta ml-1'>
+  
+    <i class='fa fa-user'></i>
+    <a href='https://polodev.github.io/tutorials//authors/polo-dev'>
+      Polo Dev
+    </a>
+  
+</div>
+
+
+<div class="meta">
+  <span class="date">
+    <i class='fa fa-calendar'></i>
+    July 28, 2018
+  </span>
+  <span class='reading_time'>
+      <i class='fa fa-clock'></i>
+    4 minutes
+  </span>
+  
+    <span class="category-block">
+      <i class='fa fa-folder'></i>
+      
+        
+        <a href="https://polodev.github.io/tutorials/categories/php">
+          php
+        </a>
+      
+        ,
+        <a href="https://polodev.github.io/tutorials/categories/back-end">
+          back-end
+        </a>
+      
+    </span>
+  
+
+</div>
+
+
+  
+  <div class="toc">
+    <h2>
+      Table of Contents
+      <span id="toc_toggle_span">[hide]</span>
+    </h2>
+    <div id='toc_content'>
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#1-setting-up-base-url">1 - setting up base url</a></li>
+<li><a href="#2-to-load-a-view">2 - to load a view</a></li>
+<li><a href="#3-automatic-url-in-codeigniter">3 - automatic url in codeigniter</a></li>
+<li><a href="#4-passing-value-in-to-the-view">4 - passing value in to the view</a></li>
+<li><a href="#5-controller-with-params">5 - controller with params</a></li>
+<li><a href="#6-model">6 - model</a></li>
+<li><a href="#7-url-helper">7 - url helper</a></li>
+<li><a href="#8-autoload-helper-globally-like-url">8 - autoload helper globally like <code>url</code></a></li>
+<li><a href="#9-database-config">9 - database config</a></li>
+<li><a href="#10-connecting-database">10 - connecting database</a></li>
+<li><a href="#11-autoload-model-globally-instead-of-single-function">11 - autoload model globally instead of single function</a></li>
+<li><a href="#12-how-to-connect-to-database-using-model">12 - how to connect to database using model</a></li>
+<li><a href="#13-getting-all-row-from-database-table">13 - getting all row from database table</a></li>
+<li><a href="#14-getting-single-row-like-laravel-show-function">14 - getting single row like laravel show function</a></li>
+<li><a href="#15-update">15 - update</a></li>
+<li><a href="#16-redirect">16 - redirect</a></li>
+<li><a href="#18-autoload-session">18 - autoload session</a></li>
+<li><a href="#19-manipulating-browser-using-output-class">19 - manipulating browser using <code>output</code> class</a></li>
+<li><a href="#20-force-content-to-download">20 - force content to download</a></li>
+<li><a href="#21-change-the-file-download-name">21 - change the file download name</a></li>
+<li><a href="#22-showing-an-image">22 - showing an image</a></li>
+<li><a href="#23-helper-for-file-upload">23 - helper for file upload</a></li>
+<li><a href="#24-file-uploading">24 - file uploading</a></li>
+<li><a href="#25-form-validation-never-trust-end-user">25 - form validation - never trust end user.</a></li>
+<li><a href="#26-persist-old-value">26 - persist old value</a></li>
+<li><a href="#27-log-for-debug">27 - log for debug</a></li>
+<li><a href="#28-using-composer-in-codeigniter">28 - Using composer in codeigniter</a></li>
+</ul>
+</nav>
+    </div>
+    
+  </div>
+  
+
+  <div class='article'>
+    
+
+<h1 id="1-setting-up-base-url">1 - setting up base url</h1>
+
+<pre><code class="language-php">// file: application/config.php
+$config['base_url'] = 'http://localhost:8000';
+</code></pre>
+
+<h1 id="2-to-load-a-view">2 - to load a view</h1>
+
+<pre><code class="language-php">// file: controllers &gt; Properties.php
+class Properties extends CI_Controller
+{
+  public function index()
+  {
+    $this-&gt;load-&gt;view('layouts/header');
+    $this-&gt;load-&gt;view('layouts/navbar');
+    $this-&gt;load-&gt;view('properties/index')
+    $this-&gt;load-&gt;view('layouts/footer');
+  }
+}
+</code></pre>
+
+<h1 id="3-automatic-url-in-codeigniter">3 - automatic url in codeigniter</h1>
+
+<pre><code class="language-bash">index.php/{cotroller}/{method}/[param1]/[param2]
+</code></pre>
+
+<h1 id="4-passing-value-in-to-the-view">4 - passing value in to the view</h1>
+
+<pre><code class="language-php">$data['user_name'] = 'Bernard';
+$data['status_group'] = ['all', 'available', 'unavailable'];
+$this-&gt;load-&gt;view('properties/index', $data)
+</code></pre>
+
+<h1 id="5-controller-with-params">5 - controller with params</h1>
+
+<p>how codeIgniter making route automatically</p>
+
+<pre><code class="language-php">public function show($id)
+{
+  $data['id'] = $id;
+  $this-&gt;load-&gt;view('properties/show', $data)
+}
+</code></pre>
+
+<h1 id="6-model">6 - model</h1>
+
+<p>model should hold the business role. eg. In laravel model we hidden some properties using <code>protected hidden</code></p>
+
+<pre><code class="language-php">// file: models/Property.php
+class Property extends CI_MODEL
+{
+  public function __construct()
+  {
+    parent::__construct();
+  }
+  public function get()
+  {
+    return &quot;4 bedroom 2 story house&quot;
+  }
+}
+// using model in controller
+// controllers/properties
+$this-&gt;load-&gt;model('Property');
+$data['name'] = $this-&gt;Property-&gt;get(); //&quot;4 bedroom 2 story house&quot;
+$this-&gt;load-&gt;view('properties/index', $data);
+</code></pre>
+
+<h1 id="7-url-helper">7 - url helper</h1>
+
+<pre><code class="language-php">// file: controllers/properties.php function: index
+$this-&gt;load-&gt;helper('url');
+// view file
+echo base_url('assets/images/imagename.jpg');
+echo site_url('properties/show/1'); // for href
+</code></pre>
+
+<h1 id="8-autoload-helper-globally-like-url">8 - autoload helper globally like <code>url</code></h1>
+
+<pre><code class="language-php">// file: config/autoload.php
+$autoload['helper'] = ['url']
+</code></pre>
+
+<h1 id="9-database-config">9 - database config</h1>
+
+<pre><code class="language-php">// file: config/database.php
+$db['default'] = [
+  .....,
+  'username' =&gt; $_ENV['DB_USER'],
+  'password' =&gt; $_ENV['PASSWORD'],
+  'database' =&gt; $_ENV['DB_NAME'],
+  ......
+]
+</code></pre>
+
+<h1 id="10-connecting-database">10 - connecting database</h1>
+
+<pre><code class="language-php">//file: models/Property.php
+public function connection_test()
+{
+  $this-&gt;load-&gt;database('default', true)
+}
+// testing connection from controller
+// file: controllers/Properties.php
+public function db_test
+{
+  $this-&gt;load-&gt;model('Property');
+  $this-&gt;Property-&gt;connection_test();
+}
+// passing database credential using $_ENV super global for testing
+// env DB_USER=root DB_PASSWORD=root  DB_DATABASE=ci_course php -S localhost:8080
+</code></pre>
+
+<h1 id="11-autoload-model-globally-instead-of-single-function">11 - autoload model globally instead of single function</h1>
+
+<pre><code class="language-php">// file: config/autoload.php
+$autoload['model'] = ['Property'] // case sensitive
+</code></pre>
+
+<h1 id="12-how-to-connect-to-database-using-model">12 - how to connect to database using model</h1>
+
+<pre><code class="language-php">// file: models/Propery.php
+// loading connection to whole model
+public function __construct
+{
+  parent::__construct();
+  $this-&gt;db = $this-&gt;load-&gt;database('default', true);
+}
+// testing to get database version
+public version get_version()
+{
+  return $this-&gt;db-&gt;query('SELECT VERSION()');
+}
+// file: controllers/Properites.php
+$version = $this-&gt;Property-&gt;get_version();
+$data['version'] = $version-&gt;conn_id-&gt;server_info;
+$this-&gt;load-&gt;view('properties/index', $data);
+</code></pre>
+
+<h1 id="13-getting-all-row-from-database-table">13 - getting all row from database table</h1>
+
+<pre><code class="language-php">// model file: models/Property.php
+public function all()
+{
+  $result_set = $this-&gt;db-&gt;get('poperties');
+  return $result_set-&gt;result_array();
+}
+// controller file: controllers/Properties.php
+$data['properties'] = $this-&gt;Property-&gt;all();
+$this-&gt;load-&gt;view('properties/index', $data);
+// views - now i can iterate in properties
+</code></pre>
+
+<h1 id="14-getting-single-row-like-laravel-show-function">14 - getting single row like laravel show function</h1>
+
+<pre><code class="language-php">// file: models/Propery.php
+public function get($id)
+{
+  $where['id'] =&gt; $id;
+  $this-&gt;db-&gt;get_where('properties', $where);
+}
+// file: controllers/Properties.php
+public function edit($id)
+{
+  $data['property'] = $this-&gt;Property-&gt;get($id);
+  $this-&gt;load-&gt;view('properties/edit', $data);
+}
+
+</code></pre>
+
+<h1 id="15-update">15 - update</h1>
+
+<p>// file: models/Propery.php</p>
+
+<pre><code class="language-php">public function update($id, $new_data)
+{
+  $where['id'] = $id;
+  $this-&gt;db-&gt;update('properties', $new_data, $where);
+}
+// file: controllers/Properties.php
+public function edit($id)
+{
+  if ($_POST)
+  {
+    $new_data['name'] = $this-&gt;input-&gt;post('name');
+    $new_data['description'] = $this-&gt;input-&gt;post('description');
+    $this-&gt;Property-&gt;update($id, $new_data);
+    redirect('properties/index');
+  }
+}
+</code></pre>
+
+<h1 id="16-redirect">16 - redirect</h1>
+
+<pre><code class="language-php">redirect('properties/index')
+</code></pre>
+
+<h1 id="18-autoload-session">18 - autoload session</h1>
+
+<pre><code class="language-php">// file: config/autoload.php
+$autoload['libraries'] = ['session'];
+// file: config/config.php
+$config['sess_save_path'] = sys_get_temp_dir()
+
+// file controllers/Properties.php
+$session_data['selected_filter'] = $this-&gt;input-&gt;get('filter');
+$this-&gt;session-&gt;set_userdata($session_data);
+// pass variable to the view
+$data['selected_filter'] = $this-&gt;session-&gt;selected_filter;
+$this-&gt;load-&gt;view('layouts/footer', $data);
+// file: views/properties/index.php
+if (empty($selected_filter))
+{
+  // some htmml
+}
+</code></pre>
+
+<h1 id="19-manipulating-browser-using-output-class">19 - manipulating browser using <code>output</code> class</h1>
+
+<pre><code class="language-php">public function kml_export()
+{
+  $this-&gt;output-&gt;set_content_type('application/xml')
+  $this-&gt;load-&gt;view('properties/kml_xml')
+}
+</code></pre>
+
+<h1 id="20-force-content-to-download">20 - force content to download</h1>
+
+<pre><code class="language-php">$this-&gt;output-&gt;set_content_type('application/octet-stream')
+$this-&gt;load-&gt;view('properties/kml_xml')
+</code></pre>
+
+<h1 id="21-change-the-file-download-name">21 - change the file download name</h1>
+
+<pre><code class="language-php">$this-&gt;output-&gt;set_content_type('application/octet-stream')
+header('Content-Disposition: inline; filename=&quot;real_estate_kml_export.kml&quot;');
+$this-&gt;load-&gt;view('properties/kml_xml')
+</code></pre>
+
+<h1 id="22-showing-an-image">22 - showing an image</h1>
+
+<pre><code class="language-php">$image = file_get_contents('assets/images/imagename.jpg');
+$this-&gt;output-&gt;set_content_type('jpg')-&gt;set_output($image);
+</code></pre>
+
+<h1 id="23-helper-for-file-upload">23 - helper for file upload</h1>
+
+<pre><code class="language-php">// file: controllers/Properties.php
+$this-&gt;laod-&gt;helper('form') // this is the perfect example to load manual helper. since we don't need form in every where
+// file: views/properties.php // instead of form tag
+echo form_open_multipart('')
+</code></pre>
+
+<h1 id="24-file-uploading">24 - file uploading</h1>
+
+<pre><code class="language-php">public function doupload()
+{
+  $config['upload_path'] = './uploads/';
+  $config['allowed_types'] = 'gif|jpg|png'
+  $this-&gt;load-&gt;library('upload', $confif);
+  $this-&gt;upload-&gt;do_upload('image_file');
+  $data = $this-&gt;upload-&gt;data();
+  return $data['file_name']
+}
+public function edit()
+{
+  if($_POST)
+  {
+    $image = false;
+    if($_FILES)
+    {
+      $image = $this-&gt;doupload();
+    }
+    if ($image) {
+      $new_data['image'] = $image;
+    }
+  }
+  $this-&gt;Property-&gt;update($id, $new_data);
+}
+</code></pre>
+
+<h1 id="25-form-validation-never-trust-end-user">25 - form validation - never trust end user.</h1>
+
+<pre><code class="language-php">$this-&gt;load-&gt;library('form_validation');
+$this-&gt;form_validation-&gt;set_rules('name','Name', 'required');
+$this-&gt;form_validation-&gt;set_rules('description','Description', 'required');
+if($this-&gt;form_validation-&gt;run()) {  } // if form is validate we will update
+</code></pre>
+
+<p>showing errors in form</p>
+
+<pre><code class="language-phtml">&lt;?php if(form_error('name')): ?&gt;
+  &lt;div class='alert alert-danger'&gt;&lt;?php echo form_error('name') ?&gt; &lt;/div&gt;
+&lt;?php endif; ?&gt;
+</code></pre>
+
+<h1 id="26-persist-old-value">26 - persist old value</h1>
+
+<pre><code class="language-php">if(!$this-&gt;form_validation-&gt;run())
+{
+  // overwrite name and description key by input value
+  $data['property']['name'] = $this-&gt;input-&gt;post('name');
+  $data['property']['description'] = $this-&gt;input-&gt;post('description');
+  // now passign $data to view
+}
+</code></pre>
+
+<h1 id="27-log-for-debug">27 - log for debug</h1>
+
+<p>generated log file will be available inside logs/log-date-formatted.php</p>
+
+<pre><code class="language-php">// file: config/config.php
+$config['log_threshold'] = 4; // 4 = all message
+$config['log_threshold'] = 2; // 2 = debug message
+//file controllers/Properties.php
+log_message('debug', 'My first Log');
+log_message('debug', 'From parameters' . print_r( $_POST, true )) // print_r 2nd parameter for return it
+</code></pre>
+
+<h1 id="28-using-composer-in-codeigniter">28 - Using composer in codeigniter</h1>
+
+<p>First we need to create a library and added to autoload library</p>
+
+<pre><code class="language-php">// file: libraries/Composer_loader.php
+class Composer_loader
+{
+  public function __construct()
+  {
+    include './vendor/autoload.php';
+  }
+}
+// file: config/autoload.php
+$autoload['libraries'] = ['Composer_loader'];
+</code></pre>
+
+  </div>
+  
+  
+    <div class='tags py-3'>
+      Tags: 
+        <a href="https://polodev.github.io/tutorials/tags/php">
+          php
+        </a>
+      
+        <a href="https://polodev.github.io/tutorials/tags/codeigniter">
+          codeigniter
+        </a>
+      
+
+    </div>
+  
+  
+
+  <div class="text-center py-3">
+    
+      <a class="btn btn-info" href="https://polodev.github.io/tutorials/decks/w3schools-jquery/">Previous Post</a>
+    
+    
+  </div>
+
+</div>
+
+<div id="disqus_thread"></div>
+<script>
+
+
+
+
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://'+ "dev-learning" +'.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+      </div>
+    </div>
+    <div class="col-md-3">
+      <aside>
+        
+          <div class="card my-2">
+  <div class="card-header">
+    <h3>Deck Tags</h3>
+  </div>
+  <ul class="list-group">
+    
+    <li class="list-group-item">
+      <a class="btn btn-link" href="https://polodev.github.io/tutorials//dtags/codeigniter">Codeigniter</a> (1)
+    </li>
+    
+    <li class="list-group-item">
+      <a class="btn btn-link" href="https://polodev.github.io/tutorials//dtags/javascript">Javascript</a> (1)
+    </li>
+    
+    <li class="list-group-item">
+      <a class="btn btn-link" href="https://polodev.github.io/tutorials//dtags/jquery">Jquery</a> (1)
+    </li>
+    
+    <li class="list-group-item">
+      <a class="btn btn-link" href="https://polodev.github.io/tutorials//dtags/php">Php</a> (1)
+    </li>
+    
+  </ul>
+</div>
+
+        
+      </aside>
+    </div>
+  </div>
+</div>
+<div id='editor' class="hidden">
+  <div id='editor_inner'>
+    <div class='codemirror_area'>
+
+      <div class='codemirror_setting'>
+        <div class='codemirror_setting_inner pb-3'>
+          <div class='d-flex justify-content-between'>
+            <h4>setting</h4>
+            <button id="close_codemirror_setting_button" class="btn btn-secondary"><i class="fa fa-times"></i></button>
+          </div>
+          <hr/>
+        <div class='row'>
+
+
+          <div class='col-sm-4'>
+            <h3>Editor</h3>
+
+            <div class='form-check'>
+              <input name="vim" value="vim" type='checkbox' id="vim" class='form-check-input'/>
+              <label for='vim' class='form-check-label'>Enable Vim keymap</label>
+            </div>
+            
+            <div class='form-check'>
+              <input name="lineWrapping" value="lineWrapping" type='checkbox' id="lineWrapping" class='form-check-input'/>
+              <label for='lineWrapping' class='form-check-label'>Enable Line Wrapping</label>
+            </div>
+            
+
+            <div class='form-group'>
+              <label for='font_family'>Font Family</label>
+              <select name='font_family' id='font_family' class="form-control">
+                <option value='monaco'>Monaco</option>
+                <option value='menlo'>Menlo</option>
+                <option value='fira_code'>fira_code</option>
+                <option value='source_code_pro'>Source Code Pro</option>
+                <option value='ubuntu_mono'>Ubuntu Mono</option>
+              </select>
+            </div>
+            
+            <div class='form-group'>
+              <label for='font_size'>Font Size</label>
+              <select name='font_size' id='font_size'>
+                <option value='14px'>14px</option>
+                <option value='16px'>16px</option>
+                <option value='18px'>18px</option>
+                <option value='20px'>20px</option>
+                <option value='22px'>22px</option>
+                <option value='22px'>22px</option>
+                <option value='24px'>24px</option>
+                <option value='26px'>26px</option>
+                <option value='28px'>28px</option>
+                <option value='30px'>30px</option>
+              </select>
+            </div>
+            
+            <div class='input-group'>
+              <div class='input-group-prepend'>
+                <label for='tab_size'>tab size</label>
+              </div>
+              <input type='text' name='tab_size' id='tab_size' class="form-control" />
+              
+            </div>
+          </div>
+          <div class='col-sm-4'>
+            <h3>Theme</h3>
+            <div>
+              <div class='form-check'>
+                <input value="monokai" type='radio' class="form-check-input" id="monokai" name="theme" />
+                <label class="form-check-label" for='monokai'>monokai</label>
+              </div>
+              
+              <div class='form-check'>
+                <input value="material" type='radio' class="form-check-input" id="material" name="theme" />
+                <label class="form-check-label" for='material'>material</label>
+              </div>
+              
+              <div class='form-check'>
+                <input value="solarized" type='radio' class="form-check-input" id="solarized" name="theme" />
+                <label class="form-check-label" for='solarized'>solarized</label>
+              </div>
+              
+              <div class='form-check'>
+                <input value="tomorrow-night-bright" type='radio' class="form-check-input" id="tomorrow-night-bright" name="theme" />
+                <label class="form-check-label" for='tomorrow-night-bright'>tomorrow-night-bright</label>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class='col-sm-4'>
+            <h3>Mode</h3>
+              <div class='form-check'>
+                <input value="htmlmixed" type='radio' class="form-check-input" id="htmlmixed" name="mode" />
+                <label class="form-check-label" for='htmlmixed'>Html</label>
+              </div>
+              
+              <div class='form-check'>
+                <input value="css" type='radio' class="form-check-input" id="css" name="mode" />
+                <label class="form-check-label" for='css'>Css</label>
+              </div>
+              
+              <div class='form-check'>
+                <input value="javascript" type='radio' class="form-check-input" id="javascript" name="mode" />
+                <label class="form-check-label" for='javascript'>JavaScript</label>
+              </div>
+              
+              <div class='form-check'>
+                <input value="jsx" type='radio' class="form-check-input" id="jsx" name="mode" />
+                <label class="form-check-label" for='jsx'>Jsx</label>
+              </div>
+              
+              <div class='form-check'>
+                <input value="php" type='radio' class="form-check-input" id="php" name="mode" />
+                <label class="form-check-label"  for='php'>Php</label>
+              </div>
+              
+              <div class='form-check'>
+                <input value="sql" type='radio' class="form-check-input" id="sql" name="mode" />
+                <label class="form-check-label" for='sql'>Sql</label>
+              </div>
+              
+          </div>
+
+        </div>
+          
+        </div>
+      </div>
+
+      <div class='codemirror_wrapper'>
+
+        
+        <div id='codemirror_editor'></div>
+
+        <div class="codemirror_editor_button">
+          <button class='btn btn-danger' id="close_footer_panel_button"><i class="fa fa-times"></i></button>
+          <button class='btn btn-info' id="open_codemirror_setting_button"><i class="fa fa-wrench"></i></button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="/tutorials/js/jquery.min.js"></script>
+<script src="/tutorials/js/resizable.js"></script>
+
+
+
+
+ <script src='/tutorials/dist/codemirror_master.js'></script>
+
+
+<script src="/tutorials/js/popper.min.js"></script>
+<script src="/tutorials/js/bootstrap.min.js"></script>
+<script src="/tutorials/js/clipboard.min.js"></script>
+<script src="/tutorials/js/highlight.min.js"></script>
+<script src="/tutorials/js/script.js"></script>
+<script src="/tutorials/js/ecma.js"></script>
+
+
+
+<script>renderMathInElement(document.body);</script>
+
+</body>
+</html>

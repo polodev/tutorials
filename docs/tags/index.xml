@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Site</title>
+    <link>https://polodev.github.io/tutorials/tags/</link>
+    <description>Recent content in Tags on Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Jul 2018 15:26:09 +0600</lastBuildDate>
+    
+	<atom:link href="https://polodev.github.io/tutorials/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Codeigniter</title>
+      <link>https://polodev.github.io/tutorials/tags/codeigniter/</link>
+      <pubDate>Sat, 28 Jul 2018 15:26:09 +0600</pubDate>
+      
+      <guid>https://polodev.github.io/tutorials/tags/codeigniter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Diplomat</title>
+      <link>https://polodev.github.io/tutorials/tags/diplomat/</link>
+      <pubDate>Sat, 28 Jul 2018 15:34:53 +0600</pubDate>
+      
+      <guid>https://polodev.github.io/tutorials/tags/diplomat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>International Affairs</title>
+      <link>https://polodev.github.io/tutorials/tags/international-affairs/</link>
+      <pubDate>Sat, 28 Jul 2018 15:34:53 +0600</pubDate>
+      
+      <guid>https://polodev.github.io/tutorials/tags/international-affairs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Javascript</title>
+      <link>https://polodev.github.io/tutorials/tags/javascript/</link>
+      <pubDate>Sat, 28 Jul 2018 15:26:09 +0600</pubDate>
+      
+      <guid>https://polodev.github.io/tutorials/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jquery</title>
+      <link>https://polodev.github.io/tutorials/tags/jquery/</link>
+      <pubDate>Sat, 28 Jul 2018 15:26:09 +0600</pubDate>
+      
+      <guid>https://polodev.github.io/tutorials/tags/jquery/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Php</title>
+      <link>https://polodev.github.io/tutorials/tags/php/</link>
+      <pubDate>Sat, 28 Jul 2018 15:26:09 +0600</pubDate>
+      
+      <guid>https://polodev.github.io/tutorials/tags/php/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

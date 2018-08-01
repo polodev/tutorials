@@ -1,0 +1,78 @@
+baseURL="https://polodev.github.io/tutorials/"
+relativeurls = false
+languageCode = "en-us"
+publishDir="docs"
+title = "Site"
+disqusShortname = "dev-learning"
+[params]
+  afterDomain='tutorials'
+[taxonomies]
+  category="categories"
+  tag="tags"
+  author="authors"
+  tutorialType="tutorialTypes"
+  dtag="dtags"
+  [outputs]
+home = [ "HTML", "RSS", "JSON"]
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "this is home page"
+    title = "home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "deck"
+    title = "decks"
+    url = "/decks/"
+    weight = 2
+  [[menu.main]]
+    identifier = "tutorial"
+    title = "tutorials"
+    url = "/tutorials/"
+    weight = 2
+  [[menu.main]]
+    identifier = "daily-journal"
+    title = "dj"
+    url = "/daily-journal/"
+    weight = 4
+  [[menu.main]]
+    identifier = "daily-science"
+    title = "ds"
+    url = "/daily-science/"
+    weight = 4
+  [[menu.main]]
+    identifier = "dates"
+    name = "this is dates page"
+    title = "dates"
+    url = "/dates/"
+    weight = 98
+  [[menu.main]]
+    identifier = "about"
+    name = "this is about page"
+    title = "about"
+    url = "/about/"
+    weight = 99
+  [[menu.main]]
+    identifier = "international-affairs"
+    title = "ia"
+    url = "/international-affairs/"
+    weight = 4
+  [[menu.main]]
+    identifier = "bangladesh-affairs"
+    name = "Bangladesh affair"
+    title = "ba"
+    url = "/bangladesh-affairs/"
+    weight = 5
+  [[menu.main]]
+    identifier = "math"
+    name = "math"
+    title = "math"
+    url = "/math/"
+    weight = 6
+  [[menu.main]]
+    identifier = "english"
+    name = "english"
+    title = "english"
+    url = "/english/"
+    weight = 7

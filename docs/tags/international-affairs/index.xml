@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>International Affairs on Site</title>
+    <link>https://polodev.github.io/tutorials/tags/international-affairs/</link>
+    <description>Recent content in International Affairs on Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Jul 2018 15:34:53 +0600</lastBuildDate>
+    
+	<atom:link href="https://polodev.github.io/tutorials/tags/international-affairs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Diplomatic Term</title>
+      <link>https://polodev.github.io/tutorials/international-affairs/diplomatic-term/</link>
+      <pubDate>Sat, 28 Jul 2018 15:34:53 +0600</pubDate>
+      
+      <guid>https://polodev.github.io/tutorials/international-affairs/diplomatic-term/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>United Nations</title>
+      <link>https://polodev.github.io/tutorials/international-affairs/united-nations/</link>
+      <pubDate>Sat, 28 Jul 2018 15:34:43 +0600</pubDate>
+      
+      <guid>https://polodev.github.io/tutorials/international-affairs/united-nations/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
