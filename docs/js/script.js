@@ -84,6 +84,7 @@ $(function () {
       this.$editor = $('#editor');
       this.$editor_inner = $('#editor_inner')
       this.$body = $('body')
+      this.$open_editor_from_footer = $('#open_editor_from_footer')
     },
     openingEditor: function () {
       this.$editor.css({opacity: 1}) // since initially i kept opacity 0 rather than display block
@@ -103,6 +104,7 @@ $(function () {
     bindEvents: function () {
       this.$toggle_editor_button.on('click', this.toggleEditor.bind(this))
       this.$close_footer_panel_button.on('click', this.closingEditor.bind(this))
+      this.$open_editor_from_footer.on('click', this.openingEditor.bind(this))
     }
   }
   App.init();
