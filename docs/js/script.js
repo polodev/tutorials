@@ -266,7 +266,7 @@ $(function() {
     },
     updateInitialDomSelection: function () {
       $("input[name='theme'][value=" + this.options.theme + "]").attr('checked', 'checked')
-      $("input[name='mode'][value=" + this.options.mode + "]").attr('checked', 'checked')
+      $("input[name='mode'][value=\"" + this.options.mode + "\"]").attr('checked', 'checked')
       this.options.keyMap == 'vim' ? this.$vim.attr('checked', true) : null
       this.options.lineWrapping  ? this.$line_wrapping.attr('checked', true) : null
       this.$font_size.val(this.fontOptions.fontSize)
