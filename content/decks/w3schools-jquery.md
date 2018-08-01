@@ -148,6 +148,7 @@ $("button").click(function(){
 * fadeOut() hide the content
 * fadeToggle()
 * fadeTo()
+
 ~~~js
 //syntax for fadeIn, fadeOut, fadeToggle
 $(selector).fadeIn(speed,callback);
