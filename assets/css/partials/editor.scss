@@ -19,23 +19,6 @@
     height: 400px;
     z-index: 199;
     overflow: auto;
-    #_close_button {
-      position: absolute;
-      right: 10px;
-      top: 5px;
-      z-index: 99;
-      cursor: pointer;
-      display: inline-block;
-      margin-left: 20px;
-    }
-    #_setting_button {
-      position: absolute;
-      right: 10px;
-      top: 50px;
-      z-index: 99;
-      cursor: pointer;
-      display: inline-block;
-    }
   }
 }
 
@@ -123,6 +106,7 @@ bootstrap overwrite
       flex: 1;
       padding: 5px;
       box-sizing: border-box;
+      border: 1px solid #666;
     }
   }
  }
