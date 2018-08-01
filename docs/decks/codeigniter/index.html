@@ -451,7 +451,7 @@ echo form_open_multipart('')
 {
   $config['upload_path'] = './uploads/';
   $config['allowed_types'] = 'gif|jpg|png'
-  $this-&gt;load-&gt;library('upload', $confif);
+  $this-&gt;load-&gt;library('upload', $config);
   $this-&gt;upload-&gt;do_upload('image_file');
   $data = $this-&gt;upload-&gt;data();
   return $data['file_name']

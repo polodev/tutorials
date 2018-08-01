@@ -268,7 +268,7 @@ public function doupload()
 {
   $config['upload_path'] = './uploads/';
   $config['allowed_types'] = 'gif|jpg|png'
-  $this->load->library('upload', $confif);
+  $this->load->library('upload', $config);
   $this->upload->do_upload('image_file');
   $data = $this->upload->data();
   return $data['file_name']
