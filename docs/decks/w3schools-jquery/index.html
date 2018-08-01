@@ -179,6 +179,7 @@
 <li><a href="#15-show-in-jquery">15 - show in jquery</a></li>
 <li><a href="#16-jquery-toggle">16 - jQuery toggle()</a></li>
 <li><a href="#17-jquery-fade-method">17 - jquery fade method</a></li>
+<li><a href="#18-jquery-effects-sliding">18 - jQuery Effects - Sliding</a></li>
 <li><a href="#19-jquery-animations-the-animate-method">19 - jQuery Animations - The animate() Method</a></li>
 <li><a href="#20-jquery-animate-method-with-relative-value">20 - jQuery animate() method with relative value <code>+=</code></a></li>
 <li><a href="#21-jquery-animate-using-pre-defined-values">21 - jQuery animate() - Using Pre-defined Values</a></li>
@@ -386,24 +387,25 @@ $(&quot;button&quot;).click(function(){
 <li>fadeIn() show the content</li>
 <li>fadeOut() hide the content</li>
 <li>fadeToggle()</li>
-<li>fadeTo()
-~~~js
-//syntax for fadeIn, fadeOut, fadeToggle
-$(selector).fadeIn(speed,callback);</li>
+<li>fadeTo()</li>
 </ul>
 
-<p>//syntax for fadeTo which taking 3 parameters
-$(selector).fadeTo(speed,opacity,callback);</p>
+<pre><code class="language-js">//syntax for fadeIn, fadeOut, fadeToggle
+$(selector).fadeIn(speed,callback);
 
-<pre><code>
-# 18 - jQuery Effects - Sliding
+//syntax for fadeTo which taking 3 parameters
+$(selector).fadeTo(speed,opacity,callback);
+</code></pre>
 
-* slideDown() show the content
-* slideUp() hide the content
-* slideToggle()
+<h1 id="18-jquery-effects-sliding">18 - jQuery Effects - Sliding</h1>
 
-~~~js
-$(selector).slideDown(speed,callback);
+<ul>
+<li>slideDown() show the content</li>
+<li>slideUp() hide the content</li>
+<li>slideToggle()</li>
+</ul>
+
+<pre><code class="language-js">$(selector).slideDown(speed,callback);
 $(&quot;#flip&quot;).click(function(){
   $(&quot;#panel&quot;).slideDown();
 });
