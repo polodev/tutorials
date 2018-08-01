@@ -72,26 +72,40 @@ hljs.initHighlightingOnLoad();
  */
 
 $(function () {
-  let close_footer_panel_button = $('#editor #close_footer_panel_button');
-  let toggle_editor_button = $('#toggle_editor_button');
-  let editor = $('#editor');
-  let editor_inner = $('#editor_inner')
-  let body = $('body')
-  function closingEditor () {
-      editor_inner.height(editor_defualt_height) // reset editor height to default height 300, before closing
-      editor.slideUp(150);
-      body.css('margin-bottom', 0)
-  }
-  function openingEditor () {
-    editor.css({opacity: 1})
-    editor.slideDown(150)
-    body.css('margin-bottom', editor_defualt_height);
-  }
-  toggle_editor_button.on('click', function () {
-    editor.is(':hidden') ? openingEditor() : closingEditor();
-  })
-  close_footer_panel_button.on('click', closingEditor)
 
+  let App = {
+    init: function () {
+      this.domCached()
+      this.bindEvents()
+    },
+    domCached: function () {
+      this.$close_footer_panel_button = $('#editor #close_footer_panel_button');
+      this.$toggle_editor_button = $('#toggle_editor_button');
+      this.$editor = $('#editor');
+      this.$editor_inner = $('#editor_inner')
+      this.$body = $('body')
+    },
+    openingEditor: function () {
+      this.$editor.css({opacity: 1}) // since initially i kept opacity 0 rather than display block
+      this.$editor.slideDown(150)
+      this.$body.css('margin-bottom', editor_defualt_height);
+
+    },
+    closingEditor: function () {
+      this.$editor.height(editor_defualt_height) // reset editor height to default height 300, before closing
+      this.$editor.slideUp(150);
+      this.$body.css('margin-bottom', 0)
+    },
+    toggleEditor: function () {
+      console.log('editor', this.$editor)
+      this.$editor.is(':hidden') ? this.openingEditor() : this.closingEditor();
+    },
+    bindEvents: function () {
+      this.$toggle_editor_button.on('click', this.toggleEditor.bind(this))
+      this.$close_footer_panel_button.on('click', this.closingEditor.bind(this))
+    }
+  }
+  App.init();
 })
 
 
@@ -121,88 +135,48 @@ $(function () {
 
 
 // CodeMirror modular coding
+// localStorage.clear();
 $(function() {
-
-  var code = {
-    value:
-`
-<?php
-
-namespace App;
-
-use Illuminate\Notifications\Notifiable;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-
-class User extends Authenticatable
-{
-    use Notifiable;
-
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = [
-        'name', 'email', 'password',
-    ];
-    public function items()
-    {
-      return $this->hasMany(Item::class);
-    }
-
-    /**
-     * The attributes that should be hidden for arrays.
-     *
-     * @var array
-     */
-    protected $hidden = [
-        'password', 'remember_token',
-    ];
-}
-`
-  }
-
-  var optionsWithOutValue = {
-    lineNumbers: true,
-    lineWrapping: false,
-    tabSize: 2,
-    keyMap: 'default',
-    theme: "solarized",
-    mode : "php",
-  }
-  var fontOptions = {
+  var App = {
+    initialOptionsWithoutValue: {
+      lineNumbers: true,
+      lineWrapping: false,
+      tabSize: 2,
+      keyMap: 'default',
+      theme: "solarized",
+      mode : "javascript",
+    },
+    initialCode: {
+      value: `//start writing`,
+    },
+    initialFontOptions: {
       fontSize: `18px`,
       fontFamily: 'monaco'
-  }
-  // localStorage.clear();
-
-  if (localStorage.getItem('optionsWithOutValue') === null) {
-    localStorage.setItem('optionsWithOutValue', JSON.stringify(optionsWithOutValue));
-  } else {
-    optionsWithOutValue = JSON.parse(localStorage.getItem('optionsWithOutValue'));
-  }
-  if (localStorage.getItem('code') === null) {
-    localStorage.setItem('code', JSON.stringify(code));
-  } else {
-    code = JSON.parse(localStorage.getItem('code'));
-  }
-  if (localStorage.getItem('fontOptions') === null) {
-    localStorage.setItem('fontOptions', JSON.stringify(fontOptions));
-  } else {
-    fontOptions = JSON.parse(localStorage.getItem('fontOptions'));
-  }
-
-  var options = Object.assign(optionsWithOutValue, code);
-
-  var App = {
-    options: options,
-    fontOptions: fontOptions,
+    },
+    options: {...this.initialCode, ...this.initialOptionsWithoutValue},
+    fontOptions: this.initialFontOptions,
     fontStacks: {
       monaco: "Monaco, Menlo, 'fira code', monospace",
       menlo: "Menlo, Monaco, 'fira code', monospace",
       fira_code: "'fira Code', Monaco, Menlo, monospace",
       source_code_pro: "'Source Code Pro', Monaco, Menlo, 'fira code', monospace",
       ubuntu_mono: "'Ubuntu Mono', Monaco, Menlo, 'fira code', monospace",
+    },
+    setOrGetLocalStorage: function (key, initial_value) {
+      let value = initial_value;
+       if (localStorage.getItem(key) === null) {
+        localStorage.setItem(key, JSON.stringify(initial_value));
+      } else {
+        value = JSON.parse(localStorage.getItem(key));
+      }
+      return value;
+    },
+    initializeLocalStorage: function () {
+      let optionsWithOutValue = this.setOrGetLocalStorage('optionsWithOutValue', this.initialOptionsWithoutValue)
+      let code = this.setOrGetLocalStorage('code', this.initialCode)
+      let fontOptions = this.setOrGetLocalStorage('fontOptions', this.initialFontOptions)
+      this.options = Object.assign(optionsWithOutValue, code)
+      this.fontOptions = fontOptions
     },
     updateLocalStorage: function (key, value) {
       // pure function
@@ -219,6 +193,7 @@ class User extends Authenticatable
       this.$editor_panel.hide();
     },
     init: function () {
+      this.initializeLocalStorage();
       this.domCached();
       this.codeMirrorBeforeSetUp();
       this.render();
@@ -243,6 +218,11 @@ class User extends Authenticatable
       this.$codemirror_editor_mounting_div = $('#codemirror_editor')
       this.$tab_size = $('#tab_size')
       this.$editor_panel = $('#editor')
+      let currentOptions = {
+        options: this.options,
+        fontOptions: this.fontOptions,
+      }
+      console.log('currentOptions', currentOptions)
     },
     render: function () {
       this.editor = CodeMirror(this.mounting_div, {
@@ -268,11 +248,9 @@ class User extends Authenticatable
     updateCodemirrorOption: function (key, value) {
       this.options[key] = value
       this.editor.setOption(key, value)
-      console.log(this.editor.getValue())
 
       let options = this.options;
       delete options.value
-      console.log('options', options)
       this.updateLocalStorage('optionsWithOutValue', options)
     },
     changeRadioOption: function (key, e) {
@@ -282,7 +260,6 @@ class User extends Authenticatable
       this.$codemirror_setting.slideUp(100)
     },
     openCodemirrorSetting: function () {
-      console.log(this.$codemirror_setting)
       this.$codemirror_setting.slideDown(100)
     },
     updateInitialDomSelection: function () {
@@ -299,7 +276,6 @@ class User extends Authenticatable
         options: this.options,
         fontOptions: this.fontOptions,
       }
-      console.log('initial state', currentOptions)
 
     },
     changeLineWrappingOption: function () {
@@ -358,33 +334,7 @@ class User extends Authenticatable
 
   App.init()
 
-})
-// codemirror editor
-$(function () {
 
-/**
- *  lineNumbers
- *  theme
- *  mode
- *  lineWrapping
- *  tabSize
- *  keyMap
- *
- * font-size
- * font-family
- */
-// CodeMirror.Vim.map('jk', '<Esc>', 'insert').
-
-// $('#mode').on('change', function (e) {
-
-//   let value = e.target.value
-//   editor.setOption('mode', value)
-// })
-
-//how to change select option value in javascript
-// function changeMode (mode) {
-//   $('#mode').val(mode)
-// }
 })
 
 
