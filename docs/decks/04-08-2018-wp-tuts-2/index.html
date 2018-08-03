@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning site</title>
+  <link rel="canonical" href="https://polodev.github.io/tutorials/decks/04-08-2018-wp-tuts-2/">
+  <link rel='icon' href='https://laracasts.com/favicons/apple-touch-icon.png' />
+  <link rel='icon' href='/tutorials/images/favicons/apple-touch-icon.png' />
+
+  
+
+ <link rel='stylesheet' type="text/css" href=' /tutorials/dist/codemirror_master.css'/>
+
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="/tutorials/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/tutorials/css/highlightjs.min.css">
+  <link rel="stylesheet" href="/tutorials/css/resizable.css">
+  <link rel="stylesheet" href="/tutorials/css/style.css">
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+
+
+</head>
+<body data-afterDomain="tutorials">
+<nav class="navbar navbar-expand-lg navbar-light bg-light main_menu">
+  <a class="navbar-brand" href="/tutorials/">Learning 101</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+      
+      
+        <li class='nav-item '>
+          <a class="nav-link" href='/tutorials/'>home</a>
+        </li>
+      
+        <li class='nav-item '>
+          <a class="nav-link" href='/tutorials/decks/'>decks</a>
+        </li>
+      
+        <li class='nav-item '>
+          <a class="nav-link" href='/tutorials/tutorials/'>tutorials</a>
+        </li>
+      
+        <li class='nav-item '>
+          <a class="nav-link" href='/tutorials/daily-journal/'>dj</a>
+        </li>
+      
+        <li class='nav-item '>
+          <a class="nav-link" href='/tutorials/daily-science/'>ds</a>
+        </li>
+      
+        <li class='nav-item '>
+          <a class="nav-link" href='/tutorials/international-affairs/'>ia</a>
+        </li>
+      
+        <li class='nav-item '>
+          <a class="nav-link" href='/tutorials/bangladesh-affairs/'>ba</a>
+        </li>
+      
+        <li class='nav-item '>
+          <a class="nav-link" href='/tutorials/math/'>math</a>
+        </li>
+      
+        <li class='nav-item '>
+          <a class="nav-link" href='/tutorials/english/'>english</a>
+        </li>
+      
+        <li class='nav-item '>
+          <a class="nav-link" href='/tutorials/dates/'>dates</a>
+        </li>
+      
+        <li class='nav-item '>
+          <a class="nav-link" href='/tutorials/about/'>about</a>
+        </li>
+      
+
+
+    </ul>
+    <div class='d-flex justify-content-center align-items-center mr-4' id="toggle_editor_button">
+      <button class="btn">toggle editor</button>
+    </div>
+    <div id="search_box" class="search_result_box d-inline my-2">
+      
+      
+    </div>
+  </div>
+  
+</nav>
+
+<div class="center mt-4">
+  <div class="row">
+    <div class="col-md-9">
+      <div class="mt-3">
+      
+<div id="single_page_content">
+  <h1 class="post_title">
+    <a href="/tutorials/decks/04-08-2018-wp-tuts-2/">Wp Tuts 2</a>
+  </h1>
+  <hr/>
+
+  
+<div class='author meta ml-1'>
+  
+    <i class='fa fa-user'></i>
+    <a href='https://polodev.github.io/tutorials//authors/polo-dev'>
+      Polo Dev
+    </a>
+  
+</div>
+
+
+<div class="meta">
+  <span class="date">
+    <i class='fa fa-calendar'></i>
+    August 4, 2018
+  </span>
+  <span class='reading_time'>
+      <i class='fa fa-clock'></i>
+    4 minutes
+  </span>
+  
+
+</div>
+
+
+  
+  <div class="toc">
+    <h2>
+      Table of Contents
+      <span id="toc_toggle_span">[hide]</span>
+    </h2>
+    <div id='toc_content'>
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#list-of-file">list of file</a></li>
+<li><a href="#theme-name-and-other-meta-data">theme name and other meta data</a></li>
+<li><a href="#language-attribute-in-html-tag">language attribute in html tag</a></li>
+<li><a href="#adding-stylesheet-url-using-bloginfo">adding stylesheet url using bloginfo</a></li>
+<li><a href="#adding-meta-charset">adding meta charset</a></li>
+<li><a href="#blog-title">blog title</a></li>
+<li><a href="#description">description</a></li>
+<li><a href="#for-wp-head-wp-footer">for wp_head  &amp; wp_footer()</a></li>
+<li><a href="#search-option-in-wordpress">search option in wordpress</a></li>
+<li><a href="#body-class-in-wordpress">body class in wordpress</a></li>
+<li><a href="#showing-nav-menu-in-view">showing nav menu in view</a></li>
+<li><a href="#adding-custom-nav-menu">adding custom nav menu</a></li>
+<li><a href="#for-homepage-link">for homepage link</a></li>
+<li><a href="#post-loop">post loop</a></li>
+<li><a href="#for-post-getting-title">for post getting title</a></li>
+<li><a href="#for-date-and-time">for date and time</a></li>
+<li><a href="#autor-name-and-link">autor name and link</a></li>
+<li><a href="#showing-all-catergory-with-category-url">showing all catergory with category url</a></li>
+<li><a href="#showing-content">showing content</a></li>
+<li><a href="#showing-excerpt">showing excerpt</a></li>
+<li><a href="#link-of-title">link of title</a></li>
+<li><a href="#adding-support-for-fetured-image">adding support for fetured image</a></li>
+<li><a href="#calling-splitted-header-php-and-footer-php">calling splitted header.php and footer.php</a></li>
+<li><a href="#showing-different-different-title-for-different-type-of-page">showing different different title for different type of page</a></li>
+<li><a href="#keeping-single-content-page-by-using-if-else-statement">keeping single content page  by using if else statement</a></li>
+<li><a href="#conditionally-showing-content-incase-of-single-page">conditionally showing content incase of single page</a></li>
+<li><a href="#post-format-support">post format support</a></li>
+<li><a href="#for-showing-page-we-have-to-create-page-php">for showing page we have to create page.php</a></li>
+<li><a href="#for-specific-page">for specific page</a></li>
+<li><a href="#making-a-template">making a template</a></li>
+<li><a href="#how-to-show-all-pages-in-wp">how to show all pages in wp</a></li>
+<li><a href="#widget">widget</a></li>
+<li><a href="#comments">comments</a></li>
+</ul>
+</nav>
+    </div>
+    
+  </div>
+  
+
+  <div class='article'>
+    
+
+<h1 id="list-of-file">list of file</h1>
+
+<ul>
+<li>index.php</li>
+<li>style.css</li>
+<li>screenshot.png</li>
+<li>functions.php</li>
+<li>header.php</li>
+<li>footer.php</li>
+<li>single.php</li>
+<li>archive.php</li>
+<li>search.php</li>
+<li>content.php</li>
+<li>content-link.php</li>
+<li>content-gallery.php</li>
+<li>content-aside.php</li>
+<li>content-link.php</li>
+<li>page.php</li>
+<li>page-about.php</li>
+<li>company-template.php</li>
+<li>front-page.php</li>
+<li>comments.php</li>
+</ul>
+
+<h1 id="theme-name-and-other-meta-data">theme name and other meta data</h1>
+
+<pre><code class="language-css">/**
+ * Theme Name: Advanced WP;
+ * Author: Jeff Bezos
+ * Author URI: http://jeff.com
+ * Description: Advanced wordpress theme
+ * Version: 1.0
+ *
+ * /
+</code></pre>
+
+<h1 id="language-attribute-in-html-tag">language attribute in html tag</h1>
+
+<pre><code class="language-html">&lt;html &lt;?php language_attributes() ?&gt;&lt;/html&gt;
+</code></pre>
+
+<h1 id="adding-stylesheet-url-using-bloginfo">adding stylesheet url using bloginfo</h1>
+
+<pre><code class="language-php">bloginfo('stylesheet_url);
+</code></pre>
+
+<h1 id="adding-meta-charset">adding meta charset</h1>
+
+<pre><code class="language-php">bloginfo('charset') ;
+</code></pre>
+
+<h1 id="blog-title">blog title</h1>
+
+<pre><code class="language-php">bloginfo('name')
+</code></pre>
+
+<h1 id="description">description</h1>
+
+<pre><code class="language-php">bloginfo('description')
+</code></pre>
+
+<h1 id="for-wp-head-wp-footer">for wp_head  &amp; wp_footer()</h1>
+
+<pre><code class="language-php">wp_head()
+wp_footer();  // responsible for admin menu in view page
+</code></pre>
+
+<h1 id="search-option-in-wordpress">search option in wordpress</h1>
+
+<pre><code class="language-html">&lt;form method='get' action=&quot;&lt;?php esc_url(home_url('/')) ?&gt;&quot;&gt;
+    &lt;input type=&quot;text&quot; name='s' /&gt;
+&lt;/form&gt;
+</code></pre>
+
+<h1 id="body-class-in-wordpress">body class in wordpress</h1>
+
+<pre><code class="language-html">&lt;body &lt;?php body_class() ?&gt;&gt;  &lt;/body&gt;
+</code></pre>
+
+<h1 id="showing-nav-menu-in-view">showing nav menu in view</h1>
+
+<pre><code class="language-php">$args = [ 'theme_location' =&gt; 'primary' ]
+wp_nav_menu($args);
+</code></pre>
+
+<h1 id="adding-custom-nav-menu">adding custom nav menu</h1>
+
+<pre><code class="language-php">// functions.php
+function adv_theme_support(){
+  register_nav_menus([
+    'primary' =&gt; __('Primary Menu'),
+    'footer' =&gt; __('Footer Menu')
+  ])
+}
+add_action('after_setup_theme', 'adv_theme_support')
+
+</code></pre>
+
+<h1 id="for-homepage-link">for homepage link</h1>
+
+<pre><code class="language-php">&lt;a href=&quot;&lt;?php echo home_url('/') ?&gt;&quot;&gt;&lt;/a&gt;
+</code></pre>
+
+<h1 id="post-loop">post loop</h1>
+
+<pre><code class="language-html">&lt;?php if(have_posts()): ?&gt;
+  &lt;?php while(have_posts()) : the_post() ?&gt;
+    {{postcontent}}
+  &lt;?php endwhile ?&gt;
+&lt;?php else:  ?&gt;
+  &lt;?php wpautop('Sorry, no posts were found') ;?&gt;
+&lt;?php endif; ?&gt;
+</code></pre>
+
+<h1 id="for-post-getting-title">for post getting title</h1>
+
+<pre><code class="language-php">the_title();
+</code></pre>
+
+<h1 id="for-date-and-time">for date and time</h1>
+
+<pre><code class="language-php">the_time('F j, Y g:i a')
+</code></pre>
+
+<h1 id="autor-name-and-link">autor name and link</h1>
+
+<pre><code class="language-html">&lt;a href=&quot;&lt;?php echo get_author_posts_url(get_the_author_meta('ID'));  ?&gt;&quot;&gt; &lt;?php the_author() ?&gt; &lt;/a&gt;
+</code></pre>
+
+<h1 id="showing-all-catergory-with-category-url">showing all catergory with category url</h1>
+
+<pre><code class="language-php">$categories = get_the_category();
+$output = '';
+$separator = ', ';
+if ($categories) {
+  foreach($categories as $category) {
+    $output .= &quot;&lt;a href=&quot;&lt;?php get_category_link($category-&gt;term_id)) ?&gt;&quot;&gt; &lt;?php $category-&gt;cat_name ?&gt; &lt;/a&gt; . &lt;?php echo $separator ?&gt;
+  }
+  echo trim($output, $separator)
+}
+?&gt;
+</code></pre>
+
+<h1 id="showing-content">showing content</h1>
+
+<pre><code class="language-php">the_content();
+</code></pre>
+
+<h1 id="showing-excerpt">showing excerpt</h1>
+
+<pre><code class="language-php">the_excerpt();
+// if we change excerpt default length
+// functions.php
+add_filter('excerpt_length', function () {
+  return 25;
+})
+</code></pre>
+
+<h1 id="link-of-title">link of title</h1>
+
+<pre><code class="language-php">the_permalink()
+</code></pre>
+
+<h1 id="adding-support-for-fetured-image">adding support for fetured image</h1>
+
+<pre><code class="language-php">// inside jfuction adv_theme_support
+add_theme_support('post_thumbnails');
+
+add_action('after_setup_theme', 'adv_theme_support');
+// inside view
+if (the_post_thumbnail()) {
+  thie_post_thumbnail();
+}
+</code></pre>
+
+<h1 id="calling-splitted-header-php-and-footer-php">calling splitted header.php and footer.php</h1>
+
+<pre><code class="language-html">get_header()
+get_footer()
+</code></pre>
+
+<h1 id="showing-different-different-title-for-different-type-of-page">showing different different title for different type of page</h1>
+
+<pre><code class="language-php">if(is_category()){
+  single_cat_title();
+} else if(is_author()){
+  the_post();
+  echo 'Archives By Author: ' .get_the_author();
+  rewind_posts();
+} else if(is_tag()){
+  single_tag_title();
+} else if(is_day()){
+  echo 'Archives By Day: ' .get_the_date();
+} else if(is_month()){
+  echo 'Archives By Month: ' .get_the_date('F Y');
+} else if(is_year()){
+  echo 'Archives By Year: ' .get_the_date('Y');
+} else {
+  echo 'Archives';
+}
+</code></pre>
+
+<h1 id="keeping-single-content-page-by-using-if-else-statement">keeping single content page  by using if else statement</h1>
+
+<pre><code class="language-html">&lt;?php if (is_search() || is_archive()) : ?&gt;
+  content of archive or search page
+&lt;?php else: ?&gt;
+  content from regular post
+&lt;?php endif; ?&gt;
+</code></pre>
+
+<pre><code class="language-html">&lt;?php get_template_part('content'); ?&gt;
+</code></pre>
+
+<h1 id="conditionally-showing-content-incase-of-single-page">conditionally showing content incase of single page</h1>
+
+<pre><code class="language-html">if (is_single()) {
+  the_content()
+}else {
+  the_excerpt()
+}
+</code></pre>
+
+<h1 id="post-format-support">post format support</h1>
+
+<pre><code class="language-php">add_theme_support('post-formats', ['aside', 'gallery', 'links'])
+// dashboard/posts/newpost in side bar we will see a format box
+// from where we can select appropriate format
+</code></pre>
+
+<p>if we have use <code>post-formats</code> we have to pass 2nd paramater in <code>get_template_part</code> function when calling</p>
+
+<pre><code class="language-php">get_template_part('content', get_post_format());
+</code></pre>
+
+<p>we can specify content for individual type  by creating following file</p>
+
+<ul>
+<li>content-gallery.php</li>
+<li>content-aside.php</li>
+<li>content-link.php</li>
+</ul>
+
+<h1 id="for-showing-page-we-have-to-create-page-php">for showing page we have to create page.php</h1>
+
+<h1 id="for-specific-page">for specific page</h1>
+
+<p>we have to create page-specific.php. like page-about.php. Rather using template is good idea</p>
+
+<h1 id="making-a-template">making a template</h1>
+
+<pre><code class="language-php">/*
+Template Name: Company Layout
+*/
+// we will get option in the  right sidebar to choose template
+</code></pre>
+
+<h1 id="how-to-show-all-pages-in-wp">how to show all pages in wp</h1>
+
+<pre><code class="language-php">wp_list_pages()
+</code></pre>
+
+<p>if we want to filtered list of pages we have to pass arguments</p>
+
+<pre><code class="language-php">$args = [
+  'child_of' =&gt; get_top_parent(),
+  'title_li' =&gt; ''
+];
+// here get_top_parent() user defined function
+&lt;php wp_list_pages($args) ?&gt;
+</code></pre>
+
+<pre><code class="language-php">function get_top_parent() {
+  global $post;
+  if ($post-&gt;post_parent) {
+    $ancestors = get_post_ancestors($post-&gt;ID);
+    return $ancestors[0]
+  }
+  return $post-&gt;ID;
+}
+</code></pre>
+
+<pre><code class="language-html">// confused
+&lt;a href=&quot;&lt;?php echo get_the_permalink(get_top_parent()) ?&gt;&quot;&gt;&lt;?php get_the_title(get_top_parent()) ?&gt;&lt;/a&gt;
+</code></pre>
+
+<pre><code class="language-php">// functions.php
+function page_is_parent() {
+  global $post;
+  $pages-&gt;get_pages('child_of='.$post-&gt;ID);
+  return count($pages) // if its more than zero its parent
+}
+</code></pre>
+
+<pre><code class="language-php">if(page_is_parent() || $post-&gt;post_parent &gt; 0) {
+  // it means it has child so we are going to show child
+}
+</code></pre>
+
+<h1 id="widget">widget</h1>
+
+<pre><code class="language-php">// functions.php
+function init() {
+  register_sidebar([
+    'name' =&gt; 'Sidebar',
+    'id' =&gt; 'sidebar',
+    'before_widget' =&gt; '&lt;div class='block'&gt;',
+    'after_widget' =&gt; '&lt;/div&gt;',
+    'before_title' =&gt; '&lt;h2 class=&quot;title&quot;&gt;',
+  'after_title' =&gt; '&lt;/h3&gt;',
+  ]);
+}
+add_action('widgets_init', 'init_widget');
+// we can set widget inside dashboard
+//showing in view page
+if (is_active_sidebar('sidebar'))  {
+  dynamic_sidebar('sidebar')
+}
+</code></pre>
+
+<h1 id="comments">comments</h1>
+
+<pre><code class="language-php">//single.php
+comments_template()
+</code></pre>
+
+<p>if we want to change the comment template</p>
+
+<pre><code class="language-php">//from where he got comments I dont know
+$args = [&quot;getting form wp website by searching wp_list_list_comments&quot;];
+wp_list_comments($args, $comments)
+</code></pre>
+
+<p>for comments form</p>
+
+<pre><code class="language-php">$form_args = ['from up website searching for comments form'];
+comment_form($form_args);
+</code></pre>
+
+  </div>
+  
+  
+    <div class='tags py-3'>
+      Tags: 
+        <a href="https://polodev.github.io/tutorials/tags/wp">
+          wp
+        </a>
+      
+
+    </div>
+  
+  
+
+  <div class="text-center py-3">
+    
+      <a class="btn btn-info" href="https://polodev.github.io/tutorials/decks/codeigniter/">Previous Post</a>
+    
+    
+  </div>
+
+</div>
+
+
+
+
+<h3>See Also</h3>
+<ul>
+  
+  <li><a href="/tutorials/math/math-test/">Math Test</a></li>
+  
+  <li><a href="/tutorials/daily-science/daily-science-example/">Daily Science Example</a></li>
+  
+  <li><a href="/tutorials/tutorials/tutorial-101/">Tutorial 101</a></li>
+  
+  <li><a href="/tutorials/bangla/bangla-101/">Bangla 101</a></li>
+  
+  <li><a href="/tutorials/english/english-101/">English 101</a></li>
+  
+</ul>
+
+
+<div id="disqus_thread"></div>
+<script>
+
+
+
+
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://'+ "dev-learning" +'.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+<progress value="0" id="progressBar">
+  <div class="progress-container">
+    <span class="progress-bar"></span>
+  </div>
+</progress>
+
+      </div>
+    </div>
+    <div class="col-md-3">
+      <aside>
+        
+          <div class="card my-2">
+  <div class="card-header">
+    <h3>Deck Tags</h3>
+  </div>
+  <ul class="list-group">
+    
+    <li class="list-group-item">
+      <a class="btn btn-link" href="https://polodev.github.io/tutorials//dtags/codeigniter">Codeigniter</a> (1)
+    </li>
+    
+    <li class="list-group-item">
+      <a class="btn btn-link" href="https://polodev.github.io/tutorials//dtags/javascript">Javascript</a> (1)
+    </li>
+    
+    <li class="list-group-item">
+      <a class="btn btn-link" href="https://polodev.github.io/tutorials//dtags/jquery">Jquery</a> (1)
+    </li>
+    
+    <li class="list-group-item">
+      <a class="btn btn-link" href="https://polodev.github.io/tutorials//dtags/php">Php</a> (1)
+    </li>
+    
+    <li class="list-group-item">
+      <a class="btn btn-link" href="https://polodev.github.io/tutorials//dtags/wp">Wp</a> (1)
+    </li>
+    
+  </ul>
+</div>
+
+        
+      </aside>
+    </div>
+  </div>
+</div>
+<div id='editor' class="hidden">
+  <div id='editor_inner'>
+    <div class='codemirror_area'>
+
+      <div class='codemirror_setting'>
+        <div class='codemirror_setting_inner pb-3'>
+          <div class='d-flex justify-content-between'>
+            <h4>setting</h4>
+            <button id="close_codemirror_setting_button" class="btn btn-secondary"><i class="fa fa-times"></i></button>
+          </div>
+          <hr/>
+        <div class='row'>
+
+
+          <div class='col-sm-4'>
+            <h3>Editor</h3>
+
+            <div class='form-check'>
+              <input name="vim" value="vim" type='checkbox' id="vim" class='form-check-input'/>
+              <label for='vim' class='form-check-label'>Enable Vim keymap</label>
+            </div>
+            
+            <div class='form-check'>
+              <input name="lineWrapping" value="lineWrapping" type='checkbox' id="lineWrapping" class='form-check-input'/>
+              <label for='lineWrapping' class='form-check-label'>Enable Line Wrapping</label>
+            </div>
+            
+
+            <div class='form-group'>
+              <label for='font_family'>Font Family</label>
+              <select name='font_family' id='font_family' class="form-control">
+                <option value='monaco'>Monaco</option>
+                <option value='menlo'>Menlo</option>
+                <option value='fira_code'>fira_code</option>
+                <option value='source_code_pro'>Source Code Pro</option>
+                <option value='ubuntu_mono'>Ubuntu Mono</option>
+              </select>
+            </div>
+            
+            <div class='form-group'>
+              <label for='font_size'>Font Size</label>
+              <select name='font_size' id='font_size'>
+                <option value='14px'>14px</option>
+                <option value='16px'>16px</option>
+                <option value='18px'>18px</option>
+                <option value='20px'>20px</option>
+                <option value='22px'>22px</option>
+                <option value='22px'>22px</option>
+                <option value='24px'>24px</option>
+                <option value='26px'>26px</option>
+                <option value='28px'>28px</option>
+                <option value='30px'>30px</option>
+              </select>
+            </div>
+            
+            <div class='input-group'>
+              <div class='input-group-prepend'>
+                <label for='tab_size'>tab size</label>
+              </div>
+              <input type='text' name='tab_size' id='tab_size' class="form-control" />
+              
+            </div>
+          </div>
+          <div class='col-sm-4'>
+            <h3>Theme</h3>
+            <div>
+              <div class='form-check'>
+                <input value="monokai" type='radio' class="form-check-input" id="monokai" name="theme" />
+                <label class="form-check-label" for='monokai'>monokai</label>
+              </div>
+              
+              <div class='form-check'>
+                <input value="material" type='radio' class="form-check-input" id="material" name="theme" />
+                <label class="form-check-label" for='material'>material</label>
+              </div>
+              
+              <div class='form-check'>
+                <input value="solarized" type='radio' class="form-check-input" id="solarized" name="theme" />
+                <label class="form-check-label" for='solarized'>solarized</label>
+              </div>
+              
+              <div class='form-check'>
+                <input value="tomorrow-night-bright" type='radio' class="form-check-input" id="tomorrow-night-bright" name="theme" />
+                <label class="form-check-label" for='tomorrow-night-bright'>tomorrow-night-bright</label>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class='col-sm-4'>
+            <h3>Mode</h3>
+              <div class='form-check'>
+                <input value="htmlmixed" type='radio' class="form-check-input" id="htmlmixed" name="mode" />
+                <label class="form-check-label" for='htmlmixed'>Html</label>
+              </div>
+              
+              <div class='form-check'>
+                <input value="css" type='radio' class="form-check-input" id="css" name="mode" />
+                <label class="form-check-label" for='css'>Css</label>
+              </div>
+              
+              <div class='form-check'>
+                <input value="javascript" type='radio' class="form-check-input" id="javascript" name="mode" />
+                <label class="form-check-label" for='javascript'>JavaScript</label>
+              </div>
+              
+              <div class='form-check'>
+                <input value="jsx" type='radio' class="form-check-input" id="jsx" name="mode" />
+                <label class="form-check-label" for='jsx'>Jsx</label>
+              </div>
+              
+              <div class='form-check'>
+                <input value="php" type='radio' class="form-check-input" id="php" name="mode" />
+                <label class="form-check-label"  for='php'>Php</label>
+              </div>
+              
+              <div class='form-check'>
+                <input value="sql" type='radio' class="form-check-input" id="sql" name="mode" />
+                <label class="form-check-label" for='sql'>Sql</label>
+              </div>
+              
+              <div class='form-check'>
+                <input value="markdown" type='radio' class="form-check-input" id="markdown" name="mode" />
+                <label class="form-check-label" for='markdown'>Markdown</label>
+              </div>
+              
+          </div>
+
+        </div>
+          
+        </div>
+      </div>
+
+      <div class='codemirror_wrapper'>
+
+        
+        <div id='codemirror_editor'></div>
+
+        <div class="codemirror_editor_button">
+          <button class='btn btn-danger' id="close_footer_panel_button"><i class="fa fa-times"></i></button>
+          <button class='btn btn-info' id="open_codemirror_setting_button"><i class="fa fa-wrench"></i></button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div title="open editor" id="open_editor_from_footer">
+  <i class="fa fa-laptop-code"></i>
+</div>
+<script src="/tutorials/js/jquery.min.js"></script>
+<script src="/tutorials/js/resizable.js"></script>
+
+
+
+
+ <script src='/tutorials/dist/codemirror_master.js'></script>
+
+
+<script src="/tutorials/js/popper.min.js"></script>
+<script src="/tutorials/js/bootstrap.min.js"></script>
+<script src="/tutorials/js/clipboard.min.js"></script>
+<script src="/tutorials/js/highlight.min.js"></script>
+<script src="/tutorials/js/script.js"></script>
+<script src="/tutorials/js/ecma.js"></script>
+<script src="/tutorials/js/reading_position_progress.js"></script>
+
+
+
+<script>renderMathInElement(document.body);</script>
+
+</body>
+</html>

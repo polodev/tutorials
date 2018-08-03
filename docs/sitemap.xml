@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://polodev.github.io/tutorials/decks/04-08-2018-wp-tuts-2/</loc>
+    <lastmod>2018-08-04T00:09:10+06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://polodev.github.io/tutorials/math/math-test/</loc>
     <lastmod>2018-07-29T16:57:49+06:00</lastmod>
   </url>
@@ -99,13 +104,13 @@
   </url>
   
   <url>
-    <loc>https://polodev.github.io/tutorials/tags/codeigniter/</loc>
+    <loc>https://polodev.github.io/tutorials/dtags/codeigniter/</loc>
     <lastmod>2018-07-28T15:26:09+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://polodev.github.io/tutorials/dtags/codeigniter/</loc>
+    <loc>https://polodev.github.io/tutorials/tags/codeigniter/</loc>
     <lastmod>2018-07-28T15:26:09+06:00</lastmod>
     <priority>0</priority>
   </url>
@@ -124,13 +129,13 @@
   
   <url>
     <loc>https://polodev.github.io/tutorials/decks/</loc>
-    <lastmod>2018-07-28T15:26:09+06:00</lastmod>
+    <lastmod>2018-08-04T00:09:10+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://polodev.github.io/tutorials/tutorialtypes/decks/</loc>
-    <lastmod>2018-07-28T15:26:09+06:00</lastmod>
+    <lastmod>2018-08-04T00:09:10+06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -165,12 +170,6 @@
   </url>
   
   <url>
-    <loc>https://polodev.github.io/tutorials/tags/international-affairs/</loc>
-    <lastmod>2018-07-28T15:34:53+06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://polodev.github.io/tutorials/tutorialtypes/international-affairs/</loc>
     <lastmod>2018-07-28T15:34:43+06:00</lastmod>
     <priority>0</priority>
@@ -183,14 +182,14 @@
   </url>
   
   <url>
-    <loc>https://polodev.github.io/tutorials/international-affairs/</loc>
+    <loc>https://polodev.github.io/tutorials/tags/international-affairs/</loc>
     <lastmod>2018-07-28T15:34:53+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://polodev.github.io/tutorials/tags/javascript/</loc>
-    <lastmod>2018-07-28T15:26:09+06:00</lastmod>
+    <loc>https://polodev.github.io/tutorials/international-affairs/</loc>
+    <lastmod>2018-07-28T15:34:53+06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -207,7 +206,7 @@
   </url>
   
   <url>
-    <loc>https://polodev.github.io/tutorials/tags/jquery/</loc>
+    <loc>https://polodev.github.io/tutorials/tags/javascript/</loc>
     <lastmod>2018-07-28T15:26:09+06:00</lastmod>
     <priority>0</priority>
   </url>
@@ -225,14 +224,14 @@
   </url>
   
   <url>
-    <loc>https://polodev.github.io/tutorials/math/</loc>
-    <lastmod>2018-07-29T16:57:49+06:00</lastmod>
+    <loc>https://polodev.github.io/tutorials/tags/jquery/</loc>
+    <lastmod>2018-07-28T15:26:09+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://polodev.github.io/tutorials/tags/php/</loc>
-    <lastmod>2018-07-28T15:26:09+06:00</lastmod>
+    <loc>https://polodev.github.io/tutorials/math/</loc>
+    <lastmod>2018-07-29T16:57:49+06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -249,14 +248,20 @@
   </url>
   
   <url>
+    <loc>https://polodev.github.io/tutorials/tags/php/</loc>
+    <lastmod>2018-07-28T15:26:09+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://polodev.github.io/tutorials/authors/polo-dev/</loc>
-    <lastmod>2018-07-29T16:57:49+06:00</lastmod>
+    <lastmod>2018-08-04T00:09:10+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://polodev.github.io/tutorials/</loc>
-    <lastmod>2018-07-29T16:57:49+06:00</lastmod>
+    <lastmod>2018-08-04T00:09:10+06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -268,7 +273,7 @@
   
   <url>
     <loc>https://polodev.github.io/tutorials/tutorialtypes/</loc>
-    <lastmod>2018-07-28T15:26:09+06:00</lastmod>
+    <lastmod>2018-08-04T00:09:10+06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -281,6 +286,18 @@
   <url>
     <loc>https://polodev.github.io/tutorials/categories/un/</loc>
     <lastmod>2018-07-28T15:34:43+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://polodev.github.io/tutorials/dtags/wp/</loc>
+    <lastmod>2018-08-04T00:09:10+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://polodev.github.io/tutorials/tags/wp/</loc>
+    <lastmod>2018-08-04T00:09:10+06:00</lastmod>
     <priority>0</priority>
   </url>
   
