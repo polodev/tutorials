@@ -170,6 +170,12 @@
   </url>
   
   <url>
+    <loc>/categories/international-affairs/</loc>
+    <lastmod>2018-07-28T15:34:53+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/international-affairs/</loc>
     <lastmod>2018-07-28T15:34:53+06:00</lastmod>
     <priority>0</priority>
@@ -182,14 +188,14 @@
   </url>
   
   <url>
-    <loc>/categories/international-affairs/</loc>
+    <loc>/international-affairs/</loc>
     <lastmod>2018-07-28T15:34:53+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/international-affairs/</loc>
-    <lastmod>2018-07-28T15:34:53+06:00</lastmod>
+    <loc>/categories/javascript/</loc>
+    <lastmod>2018-07-28T15:26:09+06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -206,7 +212,7 @@
   </url>
   
   <url>
-    <loc>/categories/javascript/</loc>
+    <loc>/categories/jquery/</loc>
     <lastmod>2018-07-28T15:26:09+06:00</lastmod>
     <priority>0</priority>
   </url>
@@ -224,14 +230,14 @@
   </url>
   
   <url>
-    <loc>/categories/jquery/</loc>
-    <lastmod>2018-07-28T15:26:09+06:00</lastmod>
+    <loc>/math/</loc>
+    <lastmod>2018-07-29T16:57:49+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/math/</loc>
-    <lastmod>2018-07-29T16:57:49+06:00</lastmod>
+    <loc>/categories/php/</loc>
+    <lastmod>2018-07-28T15:26:09+06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -243,12 +249,6 @@
   
   <url>
     <loc>/dtags/php/</loc>
-    <lastmod>2018-07-28T15:26:09+06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/php/</loc>
     <lastmod>2018-07-28T15:26:09+06:00</lastmod>
     <priority>0</priority>
   </url>
