@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Daily-journals on Site</title>
-    <link>https://polodev.github.io/tutorials/daily-journal/</link>
+    <link>/daily-journal/</link>
     <description>Recent content in Daily-journals on Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 29 Jul 2018 13:50:43 +0600</lastBuildDate>
     
-	<atom:link href="https://polodev.github.io/tutorials/daily-journal/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/daily-journal/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Daily Journal Example</title>
-      <link>https://polodev.github.io/tutorials/daily-journal/daily-journal-example/</link>
+      <link>/daily-journal/daily-journal-example/</link>
       <pubDate>Sun, 29 Jul 2018 13:50:43 +0600</pubDate>
       
-      <guid>https://polodev.github.io/tutorials/daily-journal/daily-journal-example/</guid>
+      <guid>/daily-journal/daily-journal-example/</guid>
       <description></description>
     </item>
     

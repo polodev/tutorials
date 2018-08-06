@@ -2,75 +2,75 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Site</title>
-    <link>https://polodev.github.io/tutorials/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 28 Jul 2018 15:26:09 +0600</lastBuildDate>
     
-	<atom:link href="https://polodev.github.io/tutorials/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Back End</title>
-      <link>https://polodev.github.io/tutorials/categories/back-end/</link>
+      <link>/categories/back-end/</link>
       <pubDate>Sat, 28 Jul 2018 15:26:09 +0600</pubDate>
       
-      <guid>https://polodev.github.io/tutorials/categories/back-end/</guid>
+      <guid>/categories/back-end/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Front End</title>
-      <link>https://polodev.github.io/tutorials/categories/front-end/</link>
+      <link>/categories/front-end/</link>
       <pubDate>Sat, 28 Jul 2018 15:26:09 +0600</pubDate>
       
-      <guid>https://polodev.github.io/tutorials/categories/front-end/</guid>
+      <guid>/categories/front-end/</guid>
       <description></description>
     </item>
     
     <item>
       <title>International Affairs</title>
-      <link>https://polodev.github.io/tutorials/categories/international-affairs/</link>
+      <link>/categories/international-affairs/</link>
       <pubDate>Sat, 28 Jul 2018 15:34:53 +0600</pubDate>
       
-      <guid>https://polodev.github.io/tutorials/categories/international-affairs/</guid>
+      <guid>/categories/international-affairs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Javascript</title>
-      <link>https://polodev.github.io/tutorials/categories/javascript/</link>
+      <link>/categories/javascript/</link>
       <pubDate>Sat, 28 Jul 2018 15:26:09 +0600</pubDate>
       
-      <guid>https://polodev.github.io/tutorials/categories/javascript/</guid>
+      <guid>/categories/javascript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jquery</title>
-      <link>https://polodev.github.io/tutorials/categories/jquery/</link>
+      <link>/categories/jquery/</link>
       <pubDate>Sat, 28 Jul 2018 15:26:09 +0600</pubDate>
       
-      <guid>https://polodev.github.io/tutorials/categories/jquery/</guid>
+      <guid>/categories/jquery/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Php</title>
-      <link>https://polodev.github.io/tutorials/categories/php/</link>
+      <link>/categories/php/</link>
       <pubDate>Sat, 28 Jul 2018 15:26:09 +0600</pubDate>
       
-      <guid>https://polodev.github.io/tutorials/categories/php/</guid>
+      <guid>/categories/php/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Un</title>
-      <link>https://polodev.github.io/tutorials/categories/un/</link>
+      <link>/categories/un/</link>
       <pubDate>Sat, 28 Jul 2018 15:34:43 +0600</pubDate>
       
-      <guid>https://polodev.github.io/tutorials/categories/un/</guid>
+      <guid>/categories/un/</guid>
       <description></description>
     </item>
     

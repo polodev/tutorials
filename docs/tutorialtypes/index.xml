@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TutorialTypes on Site</title>
-    <link>https://polodev.github.io/tutorials/tutorialtypes/</link>
+    <link>/tutorialtypes/</link>
     <description>Recent content in TutorialTypes on Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 04 Aug 2018 00:09:10 +0600</lastBuildDate>
     
-	<atom:link href="https://polodev.github.io/tutorials/tutorialtypes/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tutorialtypes/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Decks</title>
-      <link>https://polodev.github.io/tutorials/tutorialtypes/decks/</link>
+      <link>/tutorialtypes/decks/</link>
       <pubDate>Sat, 04 Aug 2018 00:09:10 +0600</pubDate>
       
-      <guid>https://polodev.github.io/tutorials/tutorialtypes/decks/</guid>
+      <guid>/tutorialtypes/decks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>International Affair</title>
-      <link>https://polodev.github.io/tutorials/tutorialtypes/international-affair/</link>
+      <link>/tutorialtypes/international-affair/</link>
       <pubDate>Sat, 28 Jul 2018 15:34:53 +0600</pubDate>
       
-      <guid>https://polodev.github.io/tutorials/tutorialtypes/international-affair/</guid>
+      <guid>/tutorialtypes/international-affair/</guid>
       <description></description>
     </item>
     
     <item>
       <title>International Affairs</title>
-      <link>https://polodev.github.io/tutorials/tutorialtypes/international-affairs/</link>
+      <link>/tutorialtypes/international-affairs/</link>
       <pubDate>Sat, 28 Jul 2018 15:34:43 +0600</pubDate>
       
-      <guid>https://polodev.github.io/tutorials/tutorialtypes/international-affairs/</guid>
+      <guid>/tutorialtypes/international-affairs/</guid>
       <description></description>
     </item>
     

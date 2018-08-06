@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Daily-sciences on Site</title>
-    <link>https://polodev.github.io/tutorials/daily-science/</link>
+    <link>/daily-science/</link>
     <description>Recent content in Daily-sciences on Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 29 Jul 2018 13:50:23 +0600</lastBuildDate>
     
-	<atom:link href="https://polodev.github.io/tutorials/daily-science/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/daily-science/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Daily Science Example</title>
-      <link>https://polodev.github.io/tutorials/daily-science/daily-science-example/</link>
+      <link>/daily-science/daily-science-example/</link>
       <pubDate>Sun, 29 Jul 2018 13:50:23 +0600</pubDate>
       
-      <guid>https://polodev.github.io/tutorials/daily-science/daily-science-example/</guid>
+      <guid>/daily-science/daily-science-example/</guid>
       <description></description>
     </item>
     

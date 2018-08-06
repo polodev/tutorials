@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>International Affair on Site</title>
-    <link>https://polodev.github.io/tutorials/tutorialtypes/international-affair/</link>
+    <link>/tutorialtypes/international-affair/</link>
     <description>Recent content in International Affair on Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 28 Jul 2018 15:34:53 +0600</lastBuildDate>
     
-	<atom:link href="https://polodev.github.io/tutorials/tutorialtypes/international-affair/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tutorialtypes/international-affair/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Diplomatic Term</title>
-      <link>https://polodev.github.io/tutorials/international-affairs/diplomatic-term/</link>
+      <link>/international-affairs/diplomatic-term/</link>
       <pubDate>Sat, 28 Jul 2018 15:34:53 +0600</pubDate>
       
-      <guid>https://polodev.github.io/tutorials/international-affairs/diplomatic-term/</guid>
+      <guid>/international-affairs/diplomatic-term/</guid>
       <description></description>
     </item>
     

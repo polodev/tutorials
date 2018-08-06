@@ -1,4 +1,3 @@
-baseURL="https://polodev.github.io/tutorials/"
 relativeurls = false
 languageCode = "en-us"
 publishDir="docs"

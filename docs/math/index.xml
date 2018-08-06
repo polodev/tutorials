@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Maths on Site</title>
-    <link>https://polodev.github.io/tutorials/math/</link>
+    <link>/math/</link>
     <description>Recent content in Maths on Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 29 Jul 2018 16:57:49 +0600</lastBuildDate>
     
-	<atom:link href="https://polodev.github.io/tutorials/math/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/math/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Math Test</title>
-      <link>https://polodev.github.io/tutorials/math/math-test/</link>
+      <link>/math/math-test/</link>
       <pubDate>Sun, 29 Jul 2018 16:57:49 +0600</pubDate>
       
-      <guid>https://polodev.github.io/tutorials/math/math-test/</guid>
+      <guid>/math/math-test/</guid>
       <description>math test for latex  When \(a \ne 0\), there are two solutions to \( ax^2 + bx + c = 0\) and they are  \( x = {-b \pm \sqrt{b^2-4ac} \over 2a}\)  hello  hello  When \(a \ne 0\), there are two solutions to \( ax^2 + bx + c = 0 \) and they are  $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$   hello  When \(a \ne 0\), there are two solutions to \( ax^2 + bx + c = 0 \) and they are  $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.</description>
     </item>
     
